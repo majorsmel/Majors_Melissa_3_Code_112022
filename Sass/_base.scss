@@ -1,0 +1,61 @@
+/*VARIABLES*/
+/*Fonts*/
+$shrikhand: 'Shrikhand', serif;
+$roboto: 'Roboto', sans-serif;
+
+/*Colors*/
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$city-background: #e0e0e0;
+$main-background: #ededed;
+$shadow: #cccccc;
+$grayicon: #817f7f;
+
+/*Padding & Radius*/
+$mobile-padding: 30px 25px 60px 25px;
+$tile-radius: 15px;
+
+/*MIXINS*/
+/*Icons & Shadow*/
+@mixin boxshadow {
+    box-shadow: 0px 5px 10px 0px $shadow;
+}
+@mixin numbericon {
+    color: #ffffff;
+    font-family: $roboto;
+    font-size: 14px;
+    display: inline;
+    padding: 5px 9px;
+    background-color: $primary;
+    border-radius: 30px;
+    position: relative;
+    top: 50px;
+    right: 15px;
+}
+@mixin stepicon {
+    padding: 0px 25px 0px 0px;
+    color: $grayicon;
+}
+
+/*Flex*/
+@mixin flexstart {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+@mixin flexend {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+@mixin instructionbtn {
+    padding: 30px;
+    width: 100%;
+    background-color: $main-background;
+    border-radius: 20px;
+    font-family: $roboto;
+    @include boxshadow;
+}
