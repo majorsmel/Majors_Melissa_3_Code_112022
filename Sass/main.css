@@ -13,6 +13,11 @@ h4 {
   font-weight: 500;
 }
 
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -73,11 +78,8 @@ nav div.description button {
   box-shadow: 0px 5px 10px 0px #cccccc;
 }
 
-main {
-  padding: 25px 25px 50px 25px;
-}
 main div.instructions-container {
-  margin-bottom: 50px;
+  padding: 30px 25px 60px 25px;
 }
 main div.instructions-container div.step-container {
   display: flex;
@@ -125,4 +127,59 @@ main div.instructions-container div.step-container div.instructions-step div.ico
 main div.instructions-container div.step-container div.instructions-step div.icon-text i.fa-store {
   padding: 0px 25px 0px 0px;
   color: #817f7f;
+}
+main div.restaurants-container {
+  background-color: #ededed;
+  padding: 30px 25px 60px 25px;
+}
+main div.restaurants-container div.restaurant-tiles-container {
+  /*include flex mixin*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+main div.restaurants-container div.restaurant-tiles-container div.restaurant-tile {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px #cccccc;
+  /*Can the relative position be more responsive so that
+  the tag stays over the tile when the width expands?*/
+}
+main div.restaurants-container div.restaurant-tiles-container div.restaurant-tile div.restaurant-tile-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-bottom: -5px;
+}
+main div.restaurants-container div.restaurant-tiles-container div.restaurant-tile div.new-tag {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #65aa99;
+  background-color: #99E2D0;
+  display: inline;
+  padding: 5px 25px;
+  border-radius: 3px;
+  position: relative;
+  bottom: 180px;
+  left: 270px;
+}
+main div.restaurants-container div.restaurant-tiles-container div.restaurant-tile div.text-icon-container {
+  /*insert flex mixin*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main div.restaurants-container div.restaurant-tiles-container div.restaurant-tile div.text-icon-container div.restaurant-tile-text h3 {
+  margin: 0px 10px;
+}
+main div.restaurants-container div.restaurant-tiles-container div.restaurant-tile div.text-icon-container div.restaurant-tile-text p {
+  margin: 0px 0px 20px 10px;
+}
+main div.restaurants-container div.restaurant-tiles-container div.restaurant-tile div.text-icon-container i.fa-heart {
+  padding: 0px 20px 25px 0px;
 }/*# sourceMappingURL=main.css.map */
