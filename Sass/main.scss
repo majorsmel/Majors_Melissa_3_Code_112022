@@ -8,6 +8,7 @@ $tertiary: #99E2D0;
 $city-background: #e0e0e0;
 $main-background: #ededed;
 $shadow: #cccccc;
+$grayicon: #817f7f;
 
 * {
     box-sizing: border-box;
@@ -38,6 +39,11 @@ header {
         margin-right:auto;
         }
 }
+
+@mixin boxshadow {
+    box-shadow: 0px 5px 10px 0px $shadow;
+}
+
 nav {
     background-color: $main-background;
     padding: 0px 0px 50px 0px;
@@ -47,11 +53,11 @@ nav {
         justify-content: center;
         align-items:center;
         background-color: $city-background;
+    }    
         & h4 {
             padding: 0px 15px;
             margin: 17px 0px;
         }
-    }
     & div.description {
         & h2 {
             text-align: center;
@@ -74,7 +80,80 @@ nav {
             border-radius: 30px;
             background: $primary;
             background: linear-gradient(to top, $primary 0%, $secondary 100%);
-            box-shadow: 0px 5px 5px 0px $shadow;
+            @include boxshadow;
         }
     }
 }
+
+@mixin flexstart {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flexend {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@mixin instructionbtn {
+    padding: 30px;
+    width: 100%;
+    background-color: $main-background;
+    border-radius: 20px;
+    font-family: $roboto;
+    @include boxshadow;
+}
+
+@mixin numbericon {
+    color: #ffffff;
+    font-family: $roboto;
+    font-size: 14px;
+    display: inline;
+    padding: 5px 9px;
+    background-color: $primary;
+    border-radius: 30px;
+    position: relative;
+    top: 50px;
+    right: 15px;
+}
+
+@mixin stepicon {
+    padding: 0px 25px 0px 0px;
+    color: $grayicon;
+}
+
+main {
+    padding: 25px 25px 50px 25px;
+    & div.instructions-container {
+        margin-bottom: 50px;
+        & div.step-container {
+            @include flexend;
+            width: 100%;
+            & div.instructions-step {
+                margin-bottom: 5px;
+                width: 96%;
+                & div.number {
+                    @include numbericon;
+                }
+                & div.icon-text {
+                    @include flexstart;
+                    @include instructionbtn;
+                    & i.fa-mobile-screen-button {
+                        @include stepicon;
+                    }
+                    & i.fa-list-ul {
+                        @include stepicon;
+                    }
+                    & i.fa-store {
+                        @include stepicon;
+                    }
+                }  
+            } 
+        }
+    }
+}
+

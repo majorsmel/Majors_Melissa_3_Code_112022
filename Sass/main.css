@@ -45,7 +45,7 @@ nav div.location {
   align-items: center;
   background-color: #e0e0e0;
 }
-nav div.location h4 {
+nav h4 {
   padding: 0px 15px;
   margin: 17px 0px;
 }
@@ -70,5 +70,59 @@ nav div.description button {
   border-radius: 30px;
   background: #9356DC;
   background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
-  box-shadow: 0px 5px 5px 0px #cccccc;
+  box-shadow: 0px 5px 10px 0px #cccccc;
+}
+
+main {
+  padding: 25px 25px 50px 25px;
+}
+main div.instructions-container {
+  margin-bottom: 50px;
+}
+main div.instructions-container div.step-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+main div.instructions-container div.step-container div.instructions-step {
+  margin-bottom: 5px;
+  width: 96%;
+}
+main div.instructions-container div.step-container div.instructions-step div.number {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  display: inline;
+  padding: 5px 9px;
+  background-color: #9356DC;
+  border-radius: 30px;
+  position: relative;
+  top: 50px;
+  right: 15px;
+}
+main div.instructions-container div.step-container div.instructions-step div.icon-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  width: 100%;
+  background-color: #ededed;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0px 5px 10px 0px #cccccc;
+}
+main div.instructions-container div.step-container div.instructions-step div.icon-text i.fa-mobile-screen-button {
+  padding: 0px 25px 0px 0px;
+  color: #817f7f;
+}
+main div.instructions-container div.step-container div.instructions-step div.icon-text i.fa-list-ul {
+  padding: 0px 25px 0px 0px;
+  color: #817f7f;
+}
+main div.instructions-container div.step-container div.instructions-step div.icon-text i.fa-store {
+  padding: 0px 25px 0px 0px;
+  color: #817f7f;
 }/*# sourceMappingURL=main.css.map */
