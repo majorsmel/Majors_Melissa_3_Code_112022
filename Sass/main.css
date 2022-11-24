@@ -3,6 +3,22 @@
   box-sizing: border-box;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+a:-moz-any-link {
+  text-decoration: none;
+}
+
+a:any-link {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
+}
+
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -144,7 +160,8 @@ main div.restaurants-container div.restaurant-tiles-container div.restaurant-til
   border-radius: 15px;
   box-shadow: 0px 5px 10px 0px #cccccc;
   /*Can the relative position be more responsive so that
-  the tag stays over the tile when the width expands?*/
+  the tag stays over the tile when the width expands?
+  Are these tags affected the text and icon spacing?*/
 }
 main div.restaurants-container div.restaurant-tiles-container div.restaurant-tile div.restaurant-tile-image img {
   -o-object-fit: cover;
@@ -182,4 +199,35 @@ main div.restaurants-container div.restaurant-tiles-container div.restaurant-til
 }
 main div.restaurants-container div.restaurant-tiles-container div.restaurant-tile div.text-icon-container i.fa-heart {
   padding: 0px 20px 25px 0px;
+}
+
+footer {
+  background-color: #464040;
+  color: #ffffff;
+  padding: 30px 25px 10px 25px;
+}
+footer h1 {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer ul {
+  list-style-type: none;
+  padding: 5px 0px;
+}
+footer ul li {
+  padding: 5px 0px;
+}
+footer ul li .fa-utensils {
+  color: #ffffff;
+  padding: 0px 10px 0px 0px;
+}
+footer ul li .fa-handshake-angle {
+  color: #ffffff;
+  padding: 0px 10px 0px 0px;
+}
+footer ul a {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }/*# sourceMappingURL=main.css.map */

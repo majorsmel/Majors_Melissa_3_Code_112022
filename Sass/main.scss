@@ -13,6 +13,12 @@ $grayicon: #817f7f;
 * {
     box-sizing: border-box;
 }
+a:any-link {
+    text-decoration: none;
+}
+h1 {
+    font-family: $shrikhand;
+}
 h2 {
     font-family: $roboto;
     font-weight: 900;
@@ -186,7 +192,8 @@ main {
                     }
                     
                     /*Can the relative position be more responsive so that
-                    the tag stays over the tile when the width expands?*/
+                    the tag stays over the tile when the width expands?
+                    Are these tags affected the text and icon spacing?*/
                     & div.new-tag {
                         font-family: $roboto;
                         font-size: 14px;
@@ -223,3 +230,34 @@ main {
     }
 }
 
+footer {
+    background-color: #464040;
+    color: #ffffff;
+    padding: 30px 25px 10px 25px;
+    h1 {
+        margin: 0px;
+        font-size: 18px;
+        font-weight: 100;
+    }    
+    ul {
+       list-style-type: none; 
+       padding: 5px 0px;
+        li {
+        padding: 5px 0px;
+            .fa-utensils {
+            color: #ffffff;
+            padding: 0px 10px 0px 0px;
+            }
+            .fa-handshake-angle {
+            color: #ffffff;
+            padding: 0px 10px 0px 0px;
+            }
+        }
+        a {
+            color: #ffffff;
+            font-family: $roboto;
+            font-weight: 300;
+        }
+       }
+    
+}
