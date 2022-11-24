@@ -7,6 +7,7 @@ $secondary: #FF79DA;
 $tertiary: #99E2D0;
 $city-background: #e0e0e0;
 $main-background: #ededed;
+$shadow: #cccccc;
 
 * {
     box-sizing: border-box;
@@ -65,6 +66,15 @@ nav {
             display: block;
             margin-left: auto;
             margin-right: auto;
+            border-style: none;
+            color: #ffffff;
+            font-weight:500;
+            font-size: 16px;
+            padding: 15px 30px;
+            border-radius: 30px;
+            background: $primary;
+            background: linear-gradient(to top, $primary 0%, $secondary 100%);
+            box-shadow: 0px 5px 5px 0px $shadow;
         }
     }
 }
