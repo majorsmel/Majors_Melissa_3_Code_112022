@@ -1,6 +1,7 @@
+/*This scss file doesn't seem to be compiling
+into the main.css file*/
 main {
     & div.restaurant-img {
-        width: 100%;
         img {
             object-fit: cover;
             width: 100%;
@@ -8,15 +9,15 @@ main {
         }
     }
 }
-.restaurant-dish-container {
-    background-color: $main-background;
-    border-top-left-radius: $lg-radius;
-    border-top-right-radius: $lg-radius;
+    & div.restaurant-dish-container {
+        background-color: $main-background;
+        border-top-left-radius: $lg-radius;
+        border-top-right-radius: $lg-radius;
 
-}
-.dish-continer {
-    /*replace with flex mixin*/
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
+    }
+    & div.dish-continer {
+        /*replace with flex mixin*/
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
