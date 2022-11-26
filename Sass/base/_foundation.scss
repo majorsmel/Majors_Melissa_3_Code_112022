@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+a:any-link {
+    text-decoration: none;
+}
+h1 {
+    font-family: $shrikhand;
+}
+h2 {
+    font-family: $roboto;
+    font-weight: 900;
+}
+h4 {
+    font-family: $roboto;
+    font-weight: 500;
+}
+h3 {
+    font-family: $roboto;
+    font-weight: 900;
+}
+p {
+    font-family: $roboto;
+    font-weight: 300;
+}
+body {
+    margin: 0px;
+}

@@ -1,0 +1,31 @@
+footer {
+    background-color: #464040;
+    color: #ffffff;
+    padding: 30px 25px 10px 25px;
+    h1 {
+        margin: 0px;
+        font-size: 18px;
+        font-weight: 100;
+    }    
+    ul {
+       list-style-type: none; 
+       padding: 5px 0px;
+        li {
+        padding: 5px 0px;
+            .fa-utensils {
+            color: #ffffff;
+            padding: 0px 10px 0px 0px;
+            }
+            .fa-handshake-angle {
+            color: #ffffff;
+            padding: 0px 10px 0px 0px;
+            }
+        }
+        a {
+            color: #ffffff;
+            font-family: $roboto;
+            font-weight: 300;
+        }
+       }
+    
+}
