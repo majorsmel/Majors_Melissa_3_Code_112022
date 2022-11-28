@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&family=Shrikhand&display=swap");
+/*@import 'Sass/base/all';
+@import 'Sass/components/all';
+@import 'Sass/layout/all';
+@import 'Sass/pages/all';
+@import 'Sass/utils/all';*/
 * {
   box-sizing: border-box;
 }
@@ -13,6 +18,10 @@ a:-moz-any-link {
 
 a:any-link {
   text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 h1 {
@@ -43,6 +52,37 @@ body {
   margin: 0px;
 }
 
+footer {
+  background-color: #464040;
+  color: #ffffff;
+  padding: 30px 25px 10px 25px;
+}
+footer h1 {
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer ul {
+  list-style-type: none;
+  padding: 5px 0px;
+}
+footer ul li {
+  padding: 5px 0px;
+}
+footer ul li .fa-utensils {
+  color: #ffffff;
+  padding: 0px 10px 0px 0px;
+}
+footer ul li .fa-handshake-angle {
+  color: #ffffff;
+  padding: 0px 10px 0px 0px;
+}
+footer ul a {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
 header {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   padding: 25px 0px 15px 0px;
@@ -53,6 +93,24 @@ header img {
   height: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+main div.restaurant-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+main div.restaurant-dish-container {
+  background-color: #ededed;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+main div.dish-continer {
+  /*replace with flex mixin*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 nav {
@@ -89,9 +147,14 @@ nav div.description button {
   font-size: 16px;
   padding: 15px 30px;
   border-radius: 30px;
-  background: #9356DC;
   background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
   box-shadow: 0px 5px 10px 0px #cccccc;
+  /*This is not compiling*/
+}
+nav div.description button:hover {
+  filter: brightness(110%);
+  box-shadow: 0px 5px 10px 0px #9e9d9d;
+  cursor: pointer;
 }
 
 main div.instructions-container {
@@ -199,35 +262,18 @@ main div.restaurants-container div.restaurant-tiles-container div.restaurant-til
 }
 main div.restaurants-container div.restaurant-tiles-container div.restaurant-tile div.text-icon-container i.fa-heart {
   padding: 0px 20px 25px 0px;
-}
-
-footer {
-  background-color: #464040;
-  color: #ffffff;
-  padding: 30px 25px 10px 25px;
-}
-footer h1 {
-  margin: 0px;
-  font-size: 18px;
-  font-weight: 100;
-}
-footer ul {
-  list-style-type: none;
-  padding: 5px 0px;
-}
-footer ul li {
-  padding: 5px 0px;
-}
-footer ul li .fa-utensils {
-  color: #ffffff;
-  padding: 0px 10px 0px 0px;
-}
-footer ul li .fa-handshake-angle {
-  color: #ffffff;
-  padding: 0px 10px 0px 0px;
-}
-footer ul a {
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  /*&::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0%;
+      background-color: $primary;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      transition: all 0.5s;
+  }
+  &:hover:before {
+      height: 100%;
+  }*/
 }/*# sourceMappingURL=main.css.map */

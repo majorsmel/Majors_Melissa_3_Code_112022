@@ -25,6 +25,24 @@
     font-family: $roboto;
     @include boxshadow;
 }
+@mixin gradientbtn {
+    display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-style: none;
+            color: #ffffff;
+            font-weight:500;
+            font-size: 16px;
+            padding: 15px 30px;
+            border-radius: $lg-radius;
+            background: linear-gradient(to top, $primary 0%, $secondary 100%);
+            @include boxshadow;
+}
+@mixin gradientbtnhover {
+    filter: brightness(110%);
+    box-shadow: 0px 5px 10px 0px #9e9d9d;
+    cursor: pointer;
+}
 @mixin flexstart {
     display: flex;
     flex-direction: row;

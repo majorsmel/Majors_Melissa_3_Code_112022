@@ -4,6 +4,9 @@
 a:any-link {
     text-decoration: none;
 }
+a:hover {
+    cursor: pointer;
+}
 h1 {
     font-family: $shrikhand;
 }
