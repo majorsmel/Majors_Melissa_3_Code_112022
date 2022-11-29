@@ -228,12 +228,13 @@ main div.restaurants-container div.restaurant-tiles-container div.text-icon-cont
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 15px;
 }
 main div.restaurants-container div.restaurant-tiles-container div.text-icon-container div.restaurant-tile-text h3 {
-  margin: 0px 10px;
+  margin: 0px;
 }
 main div.restaurants-container div.restaurant-tiles-container div.text-icon-container div.restaurant-tile-text p {
-  margin: 0px 0px 20px 10px;
+  margin: 0px;
 }
 main div.restaurants-container div.restaurant-tiles-container div.text-icon-container i.fa-heart {
   padding: 0px 20px 25px 0px;

@@ -104,6 +104,13 @@ main {
         justify-content: space-between;
         align-items: center;
         padding: 15px;
+         & div.restaurant-tile-text {
+          h3 {
+            margin: 0px;;
+          }
+          p {
+            margin: 0px;
+          }
         }
         & i.fa-heart {
           padding: 0px 20px 25px 0px;
