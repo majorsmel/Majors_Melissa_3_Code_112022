@@ -42,7 +42,11 @@ h4 {
 h5 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
-  font-size: 16px;
+}
+
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 p {
@@ -119,12 +123,53 @@ main div.restaurant-dish-container .restaurant-title {
   justify-content: space-between;
   align-items: center;
 }
+main div.restaurant-dish-container .restaurant-title h1 {
+  font-size: 32px;
+}
 main div.restaurant-dish-container .restaurant-title .fa-heart {
   margin-right: 15px;
 }
-main div.dish-container {
-  /*replace with flex mixin*/
+main div.dish-container .dish-type h5 {
+  font-size: 18px;
+}
+main div.dish-container .dish-type .dishes-container {
+  /*insert flex mixin*/
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: flex-end;
+  gap: 15px;
+}
+main div.dish-container .dish-type .dishes-container .dish-banner {
+  padding: 15px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0px 5px 10px 0px #cccccc;
+  /*include flex mixin*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main div.dish-container .dish-type .dishes-container .dish-banner h6 {
+  font-size: 22px;
+  margin: 0px;
+}
+main div.dish-container .dish-type .dishes-container .dish-banner p {
+  margin: 5px 0px 0px 0px;
+  font-size: 18px;
+}
+main div.dish-container button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 15px 30px;
+  border-radius: 45px;
+  background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+  box-shadow: 0px 5px 10px 0px #cccccc;
 }/*# sourceMappingURL=restaurants.css.map */

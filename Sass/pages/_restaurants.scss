@@ -20,15 +20,48 @@ main {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            & h1 {
+                font-size: 32px;
+            }
             & .fa-heart {
                 margin-right: 15px;
             }
         }
     }
     & div.dish-container {
-        /*replace with flex mixin*/
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
+        & .dish-type {
+            & h5 {
+                font-size: 18px;
+            }
+            & .dishes-container {
+                /*insert flex mixin*/
+                display:flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-end;
+                gap: 15px;
+                & .dish-banner {
+                    @include dishbtn;
+                    /*include flex mixin*/
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    & h6 {
+                        font-size: 22px;
+                        margin: 0px;
+                    }
+                    & p {
+                        margin: 5px 0px 0px 0px;
+                        font-size: 18px;
+                    }
+                    & .dish-price {
+
+                    }
+                }
+            }
+        }
+        & button {
+            @include gradientbtn;
+        }
     }
 }
