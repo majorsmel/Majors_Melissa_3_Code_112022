@@ -21,9 +21,15 @@ a:hover {
 
 h1 {
   font-family: "Shrikhand", serif;
+  margin: 0px;
 }
 
 h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
 }
@@ -33,9 +39,10 @@ h4 {
   font-weight: 500;
 }
 
-h3 {
+h5 {
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-weight: 100;
+  font-size: 16px;
 }
 
 p {
@@ -95,13 +102,27 @@ main div.restaurant-img img {
      object-fit: cover;
   width: 100%;
   height: 300px;
+  position: static;
 }
 main div.restaurant-dish-container {
   background-color: #ededed;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  padding: 30px 25px 60px 25px;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  position: relative;
+  top: -60px;
 }
-main div.dish-continer {
+main div.restaurant-dish-container .restaurant-title {
+  /*replace with flex variable*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+main div.restaurant-dish-container .restaurant-title .fa-heart {
+  margin-right: 15px;
+}
+main div.dish-container {
   /*replace with flex mixin*/
   display: flex;
   flex-direction: column;

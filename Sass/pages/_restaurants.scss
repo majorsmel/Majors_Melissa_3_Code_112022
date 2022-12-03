@@ -4,15 +4,28 @@ main {
             object-fit: cover;
             width: 100%;
             height: 300px;
+            position: static;
         }
     }
     & div.restaurant-dish-container {
         background-color: $main-background;
+        padding: $mobile-padding;
         border-top-left-radius: $lg-radius;
         border-top-right-radius: $lg-radius;
-
+        position: relative;
+        top: -60px;
+        & .restaurant-title {
+            /*replace with flex variable*/
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            & .fa-heart {
+                margin-right: 15px;
+            }
+        }
     }
-    & div.dish-continer {
+    & div.dish-container {
         /*replace with flex mixin*/
         display:flex;
         flex-direction: column;

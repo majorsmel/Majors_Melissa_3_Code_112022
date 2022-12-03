@@ -21,9 +21,15 @@ a:hover {
 
 h1 {
   font-family: "Shrikhand", serif;
+  margin: 0px;
 }
 
 h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
 }
@@ -33,9 +39,10 @@ h4 {
   font-weight: 500;
 }
 
-h3 {
+h5 {
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-weight: 100;
+  font-size: 16px;
 }
 
 p {
@@ -123,7 +130,7 @@ nav div.description button {
   font-weight: 500;
   font-size: 16px;
   padding: 15px 30px;
-  border-radius: 30px;
+  border-radius: 45px;
   background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
   box-shadow: 0px 5px 10px 0px #cccccc;
   /*This is not compiling*/
@@ -252,4 +259,7 @@ main div.restaurants-container div.restaurant-tiles-container div.text-icon-cont
                     &:hover:before {
                         height: 100%;
                     }*/
+}
+main div.restaurants-container div.restaurant-tiles-container div.text-icon-container i.solid-heart {
+  color: #9356DC;
 }/*# sourceMappingURL=homepage.css.map */
