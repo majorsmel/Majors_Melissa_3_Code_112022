@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -21,6 +21,7 @@ a:hover {
 
 h1 {
   font-family: "Shrikhand", serif;
+  font-weight: 100;
   margin: 0px;
 }
 
@@ -101,14 +102,14 @@ header img {
   margin-right: auto;
 }
 
-main div.restaurant-img img {
+main .restaurant-img img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 300px;
   position: static;
 }
-main div.restaurant-dish-container {
+main .restaurant-dish-container {
   background-color: #ededed;
   padding: 30px 25px 60px 25px;
   border-top-left-radius: 45px;
@@ -116,23 +117,32 @@ main div.restaurant-dish-container {
   position: relative;
   top: -60px;
 }
-main div.restaurant-dish-container .restaurant-title {
+main .restaurant-dish-container .restaurant-title {
   /*replace with flex variable*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-main div.restaurant-dish-container .restaurant-title h1 {
+main .restaurant-dish-container .restaurant-title h1 {
   font-size: 32px;
 }
-main div.restaurant-dish-container .restaurant-title .fa-heart {
+main .restaurant-dish-container .restaurant-title .fa-heart {
   margin-right: 15px;
 }
-main div.dish-container .dish-type h5 {
+main .dish-container .dish-type h5 {
   font-size: 18px;
+  margin-top: 50px;
 }
-main div.dish-container .dish-type .dishes-container {
+main .dish-container .dish-type h5:before {
+  position: absolute;
+  height: 0;
+  width: 45px;
+  content: "";
+  border-top: 4px solid #99E2D0;
+  top: 155px;
+}
+main .dish-container .dish-type .dishes-container {
   /*insert flex mixin*/
   display: flex;
   flex-direction: column;
@@ -140,7 +150,7 @@ main div.dish-container .dish-type .dishes-container {
   align-items: flex-end;
   gap: 15px;
 }
-main div.dish-container .dish-type .dishes-container .dish-banner {
+main .dish-container .dish-type .dishes-container .dish-banner {
   padding: 15px;
   width: 100%;
   background-color: #ffffff;
@@ -151,25 +161,41 @@ main div.dish-container .dish-type .dishes-container .dish-banner {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-end;
 }
-main div.dish-container .dish-type .dishes-container .dish-banner h6 {
+main .dish-container .dish-type .dishes-container .dish-banner h6 {
   font-size: 22px;
   margin: 0px;
 }
-main div.dish-container .dish-type .dishes-container .dish-banner p {
+main .dish-container .dish-type .dishes-container .dish-banner p {
   margin: 5px 0px 0px 0px;
   font-size: 18px;
 }
-main div.dish-container button {
+main .dish-container .dish-type .dishes-container .dish-banner .dish-price {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+}
+main .dish-container button {
   display: block;
   margin-left: auto;
   margin-right: auto;
   border-style: none;
   color: #ffffff;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   padding: 15px 30px;
   border-radius: 45px;
   background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
   box-shadow: 0px 5px 10px 0px #cccccc;
+  font-size: 18px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px 85px;
+}
+main .dish-container button:hover {
+  filter: brightness(110%);
+  box-shadow: 0px 5px 10px 0px #9e9d9d;
+  cursor: pointer;
 }/*# sourceMappingURL=restaurants.css.map */

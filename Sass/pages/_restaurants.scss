@@ -1,5 +1,5 @@
 main {
-    & div.restaurant-img {
+    & .restaurant-img {
         img {
             object-fit: cover;
             width: 100%;
@@ -7,7 +7,7 @@ main {
             position: static;
         }
     }
-    & div.restaurant-dish-container {
+    & .restaurant-dish-container {
         background-color: $main-background;
         padding: $mobile-padding;
         border-top-left-radius: $lg-radius;
@@ -28,10 +28,19 @@ main {
             }
         }
     }
-    & div.dish-container {
+    & .dish-container {
         & .dish-type {
             & h5 {
                 font-size: 18px;
+                margin-top: 50px;
+                &:before {
+                    position: absolute;
+                    height: 0;
+                    width: 45px;
+                    content: '';
+                    border-top: 4px solid $tertiary;
+                    top: 155px;
+                }
             }
             & .dishes-container {
                 /*insert flex mixin*/
@@ -46,6 +55,7 @@ main {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+                    align-items: flex-end;
                     & h6 {
                         font-size: 22px;
                         margin: 0px;
@@ -55,13 +65,22 @@ main {
                         font-size: 18px;
                     }
                     & .dish-price {
-
+                        font-family: $roboto;
+                        font-size: 18px;
+                        font-weight: 900;
                     }
                 }
             }
         }
         & button {
             @include gradientbtn;
+            font-size: 18px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 20px 85px;
+            &:hover {
+                @include gradientbtnhover;
+            }
         }
     }
 }
