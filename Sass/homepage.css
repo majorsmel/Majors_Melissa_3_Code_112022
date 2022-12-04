@@ -106,7 +106,7 @@ nav {
   background-color: #ededed;
   padding: 0px 0px 50px 0px;
 }
-nav div.location {
+nav .location {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -117,16 +117,16 @@ nav h4 {
   padding: 0px 15px;
   margin: 17px 0px;
 }
-nav div.description h2 {
+nav .description h2 {
   text-align: center;
   margin: 40px;
 }
-nav div.description p {
+nav .description p {
   text-align: center;
   font-size: 18px;
   margin: 0px 40px 30px 40px;
 }
-nav div.description button {
+nav .description button {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -141,27 +141,27 @@ nav div.description button {
   box-shadow: 0px 5px 10px 0px #cccccc;
   /*This is not compiling*/
 }
-nav div.description button:hover {
+nav .description button:hover {
   filter: brightness(110%);
   box-shadow: 0px 5px 10px 0px #9e9d9d;
   cursor: pointer;
 }
 
-main div.instructions-container {
+main .instructions-container {
   padding: 30px 25px 60px 25px;
 }
-main div.instructions-container div.step-container {
+main .instructions-container .step-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
 }
-main div.instructions-container div.step-container div.instructions-step {
+main .instructions-container .step-container .instructions-step {
   margin-bottom: 5px;
   width: 96%;
 }
-main div.instructions-container div.step-container div.instructions-step div.number {
+main .instructions-container .step-container .instructions-step .number {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -173,7 +173,7 @@ main div.instructions-container div.step-container div.instructions-step div.num
   top: 50px;
   right: 15px;
 }
-main div.instructions-container div.step-container div.instructions-step div.icon-text {
+main .instructions-container .step-container .instructions-step .icon-text {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -185,36 +185,36 @@ main div.instructions-container div.step-container div.instructions-step div.ico
   font-family: "Roboto", sans-serif;
   box-shadow: 0px 5px 10px 0px #cccccc;
 }
-main div.instructions-container div.step-container div.instructions-step div.icon-text i.fa-mobile-screen-button {
+main .instructions-container .step-container .instructions-step .icon-text i.fa-mobile-screen-button {
   padding: 0px 25px 0px 0px;
   color: #817f7f;
 }
-main div.instructions-container div.step-container div.instructions-step div.icon-text i.fa-list-ul {
+main .instructions-container .step-container .instructions-step .icon-text i.fa-list-ul {
   padding: 0px 25px 0px 0px;
   color: #817f7f;
 }
-main div.instructions-container div.step-container div.instructions-step div.icon-text i.fa-store {
+main .instructions-container .step-container .instructions-step .icon-text i.fa-store {
   padding: 0px 25px 0px 0px;
   color: #817f7f;
 }
-main div.restaurants-container {
+main .restaurants-container {
   background-color: #ededed;
   padding: 30px 25px 60px 25px;
 }
-main div.restaurants-container div.restaurant-tiles-container {
+main .restaurants-container .restaurant-tiles-container {
   /*include flex mixin*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
 }
-main div.restaurants-container div.restaurant-tiles-container div.restaurant-tile {
+main .restaurants-container .restaurant-tiles-container .restaurant-tile {
   position: relative;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0px 5px 10px 0px #cccccc;
 }
-main div.restaurants-container div.restaurant-tiles-container div.restaurant-tile-image img {
+main .restaurants-container .restaurant-tiles-container .restaurant-tile-image img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 200px;
@@ -223,7 +223,7 @@ main div.restaurants-container div.restaurant-tiles-container div.restaurant-til
   border-top-right-radius: 15px;
   margin-bottom: -5px;
 }
-main div.restaurants-container div.restaurant-tiles-container div.new-tag {
+main .restaurants-container .restaurant-tiles-container .new-tag {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #65aa99;
@@ -235,7 +235,7 @@ main div.restaurants-container div.restaurant-tiles-container div.new-tag {
   top: 15px;
   right: 15px;
 }
-main div.restaurants-container div.restaurant-tiles-container div.text-icon-container {
+main .restaurants-container .restaurant-tiles-container .text-icon-container {
   /*insert flex mixin*/
   display: flex;
   flex-direction: row;
@@ -243,29 +243,34 @@ main div.restaurants-container div.restaurant-tiles-container div.text-icon-cont
   align-items: center;
   padding: 15px;
 }
-main div.restaurants-container div.restaurant-tiles-container div.text-icon-container div.restaurant-tile-text h3 {
+main .restaurants-container .restaurant-tiles-container .text-icon-container .restaurant-tile-text h3 {
   margin: 0px;
 }
-main div.restaurants-container div.restaurant-tiles-container div.text-icon-container div.restaurant-tile-text p {
+main .restaurants-container .restaurant-tiles-container .text-icon-container .restaurant-tile-text p {
   margin: 0px;
 }
-main div.restaurants-container div.restaurant-tiles-container div.text-icon-container i.fa-heart {
+main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon {
+  position: relative;
+}
+main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon i.fa-outlineheart {
   padding: 0px 20px 25px 0px;
-  /*&::before {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 0%;
-                        background-color: $primary;
-                        bottom: 0;
-                        right: 0;
-                        z-index: -1;
-                        transition: all 0.5s;
-                    }
-                    &:hover:before {
-                        height: 100%;
-                    }*/
+  position: absolute;
+  right: -10px;
+  z-index: 1;
+  transition: 0.5s;
 }
-main div.restaurants-container div.restaurant-tiles-container div.text-icon-container i.solid-heart {
+main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon i.fa-outlineheart:hover {
+  cursor: pointer;
+  z-index: -1;
+}
+main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon i.fa-solidheart {
+  color: transparent;
+  position: absolute;
+  right: 10px;
+  transition: 0.5s;
+}
+main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon i.fa-solidheart:hover {
+  cursor: pointer;
+  z-index: 1;
   color: #9356DC;
 }/*# sourceMappingURL=homepage.css.map */

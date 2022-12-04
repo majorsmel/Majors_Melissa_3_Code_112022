@@ -1,7 +1,7 @@
 nav {
   background-color: $main-background;
   padding: 0px 0px 50px 0px;
-  & div.location {
+  & .location {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -12,7 +12,7 @@ nav {
     padding: 0px 15px;
     margin: 17px 0px;
   }
-  & div.description {
+  & .description {
     & h2 {
       text-align: center;
       margin: 40px;
@@ -33,18 +33,18 @@ nav {
 }
 
 main {
-  & div.instructions-container {
+  & .instructions-container {
     padding: $mobile-padding;
-    & div.step-container {
+    & .step-container {
       @include flexend;
       width: 100%;
-      & div.instructions-step {
+      & .instructions-step {
         margin-bottom: 5px;
         width: 96%;
-        & div.number {
+        & .number {
           @include numbericon;
         }
-        & div.icon-text {
+        & .icon-text {
           @include flexstart;
           @include instructionbtn;
           & i.fa-mobile-screen-button {
@@ -60,16 +60,16 @@ main {
       }
     }
   }
-  & div.restaurants-container {
+  & .restaurants-container {
     background-color: $main-background;
     padding: $mobile-padding;
-    & div.restaurant-tiles-container {
+    & .restaurant-tiles-container {
       /*include flex mixin*/
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       gap: 20px;
-      & div.restaurant-tile {
+      & .restaurant-tile {
         position: relative;
         background-color: #ffffff;
         border-radius: $md-radius;
@@ -85,7 +85,7 @@ main {
           }
         }
       }
-      & div.new-tag {
+      & .new-tag {
         font-family: $roboto;
         font-size: 14px;
         color: #65aa99;
@@ -97,14 +97,14 @@ main {
         top:15px;
         right: 15px;
       }
-      & div.text-icon-container {
+      & .text-icon-container {
         /*insert flex mixin*/
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 15px;
-         & div.restaurant-tile-text {
+         & .restaurant-tile-text {
           h3 {
             margin: 0px;;
           }
@@ -112,26 +112,30 @@ main {
             margin: 0px;
           }
         }
-        & i.fa-heart {
-          padding: 0px 20px 25px 0px;
-          /*&::before {
-                                content: "";
-                                position: absolute;
-                                width: 100%;
-                                height: 0%;
-                                background-color: $primary;
-                                bottom: 0;
-                                right: 0;
-                                z-index: -1;
-                                transition: all 0.5s;
-                            }
-                            &:hover:before {
-                                height: 100%;
-                            }*/
-        }
-        & i.solid-heart {
-            color: $primary;
-
+        & .heart-icon {
+          position: relative;
+          & i.fa-outlineheart {
+            padding: 0px 20px 25px 0px;
+            position: absolute;
+            right: -10px;
+            z-index: 1;
+            transition: 0.5s;
+            &:hover {
+              cursor: pointer;
+              z-index: -1;
+            }
+          }
+          & i.fa-solidheart {
+            color: transparent;
+            position:absolute;
+            right: 10px;
+            transition: 0.5s;
+            &:hover {
+              cursor: pointer;
+              z-index: 1;
+              color: $primary;
+            }
+          }
         }
       }
     }
