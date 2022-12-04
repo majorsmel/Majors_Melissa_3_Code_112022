@@ -24,8 +24,20 @@ main {
                 font-size: 32px;
             }
             & .heart-icon {
+                position: relative;
                 margin-right: 15px;
-                @include heart-hover;
+                & i.fa-outlineheart {
+                    @include outlineheart-before;
+                    &:hover {
+                      @include outlineheart-after;
+                    }
+                  }
+                  & i.fa-solidheart {
+                    @include solidheart-before;
+                    &:hover {
+                      @include solidheart-after;
+                    }
+                }
             }
         }
     }

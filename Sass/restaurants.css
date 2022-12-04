@@ -128,7 +128,30 @@ main .restaurant-dish-container .restaurant-title h1 {
   font-size: 32px;
 }
 main .restaurant-dish-container .restaurant-title .heart-icon {
+  position: relative;
   margin-right: 15px;
+}
+main .restaurant-dish-container .restaurant-title .heart-icon i.fa-outlineheart {
+  padding: 0px 20px 25px 0px;
+  position: absolute;
+  right: -10px;
+  z-index: 1;
+  transition: 0.5s;
+}
+main .restaurant-dish-container .restaurant-title .heart-icon i.fa-outlineheart:hover {
+  cursor: pointer;
+  z-index: -1;
+}
+main .restaurant-dish-container .restaurant-title .heart-icon i.fa-solidheart {
+  color: transparent;
+  position: absolute;
+  right: 10px;
+  transition: 0.5s;
+}
+main .restaurant-dish-container .restaurant-title .heart-icon i.fa-solidheart:hover {
+  cursor: pointer;
+  z-index: 1;
+  color: #9356DC;
 }
 main .dish-container .dish-type h5 {
   font-size: 18px;

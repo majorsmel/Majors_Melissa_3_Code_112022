@@ -74,20 +74,6 @@
     z-index: 1;
     color: $primary;
 }
-@mixin heart-hover {
-    position: relative;
-    & i.fa-outlineheart {
-        @include outlineheart-before;
-        &:hover {
-            @include outlineheart-after;
-        }
-    }
-    & i.fa-solidheart {
-        @include solidheart-before;
-        &:hover {
-        @include solidheart-after;
-    }
-}
 @mixin flexstart {
     display: flex;
     flex-direction: row;
