@@ -23,8 +23,9 @@ main {
             & h1 {
                 font-size: 32px;
             }
-            & .fa-heart {
+            & .heart-icon {
                 margin-right: 15px;
+                @include heart-hover;
             }
         }
     }
@@ -78,6 +79,7 @@ main {
             margin-top: 50px;
             margin-bottom: 50px;
             padding: 20px 85px;
+            transition: $hover-transition;
             &:hover {
                 @include gradientbtnhover;
             }

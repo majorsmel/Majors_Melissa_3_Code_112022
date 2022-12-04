@@ -24,7 +24,7 @@ nav {
     }
     & button {
       @include gradientbtn;
-      /*This is not compiling*/
+      transition: $hover-transition;
       &:hover {
         @include gradientbtnhover;
       }
@@ -113,29 +113,20 @@ main {
           }
         }
         & .heart-icon {
-          position: relative;
+          @include heart-hover;
+          /*position: relative;
           & i.fa-outlineheart {
-            padding: 0px 20px 25px 0px;
-            position: absolute;
-            right: -10px;
-            z-index: 1;
-            transition: 0.5s;
+            @include outlineheart-before;
             &:hover {
-              cursor: pointer;
-              z-index: -1;
+              @include outlineheart-after;
             }
           }
           & i.fa-solidheart {
-            color: transparent;
-            position:absolute;
-            right: 10px;
-            transition: 0.5s;
+            @include solidheart-before;
             &:hover {
-              cursor: pointer;
-              z-index: 1;
-              color: $primary;
+              @include solidheart-after;
             }
-          }
+          }*/
         }
       }
     }
