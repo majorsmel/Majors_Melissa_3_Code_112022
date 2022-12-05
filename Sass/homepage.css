@@ -102,6 +102,54 @@ header img {
   margin-right: auto;
 }
 
+.spinner {
+  height: 100vh;
+  -webkit-animation: hideAnimation 0s ease-in 3s;
+          animation: hideAnimation 0s ease-in 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.spinner .rotate {
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  width: 20%;
+  -webkit-animation: rotation 3s forwards;
+          animation: rotation 3s forwards;
+}
+
+@-webkit-keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+@-webkit-keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(540deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(540deg);
+  }
+}
 nav {
   background-color: #ededed;
   padding: 0px 0px 50px 0px;

@@ -1,3 +1,31 @@
+.spinner {
+  height: 100vh;
+  animation: hideAnimation 0s ease-in 3s;
+  animation-fill-mode: forwards;
+  & .rotate {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 20%;
+    animation: rotation 3s forwards;
+  }
+}
+@keyframes hideAnimation {
+  to {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(540deg);
+  }
+}
 nav {
   background-color: $main-background;
   padding: 0px 0px 50px 0px;
