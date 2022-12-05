@@ -15,11 +15,7 @@ main {
         position: relative;
         top: -60px;
         & .restaurant-title {
-            /*replace with flex variable*/
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
+            @include flexcenterrowbetween;
             & h1 {
                 font-size: 32px;
             }
@@ -56,19 +52,11 @@ main {
                 }
             }
             & .dishes-container {
-                /*insert flex mixin*/
-                display:flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: flex-end;
+                @include flexendcolumnaround;
                 gap: 15px;
                 & .dish-banner {
                     @include dishbtn;
-                    /*include flex mixin*/
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: flex-end;
+                    @include flexendrowbetween;
                     & h6 {
                         font-size: 22px;
                         margin: 0px;

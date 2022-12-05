@@ -74,15 +74,33 @@
     z-index: 1;
     color: $primary;
 }
-@mixin flexstart {
+@mixin flexcenterrowstart {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
-@mixin flexend {
+@mixin flexendcolumnbetween {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-end;
+}
+@mixin flexcenterrowbetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flexendrowbetween {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+@mixin flexendcolumnaround {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: flex-end;
 }

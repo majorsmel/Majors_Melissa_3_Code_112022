@@ -250,7 +250,6 @@ main .restaurants-container {
   padding: 30px 25px 60px 25px;
 }
 main .restaurants-container .restaurant-tiles-container {
-  /*include flex mixin*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -284,7 +283,6 @@ main .restaurants-container .restaurant-tiles-container .new-tag {
   right: 15px;
 }
 main .restaurants-container .restaurant-tiles-container .text-icon-container {
-  /*insert flex mixin*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;

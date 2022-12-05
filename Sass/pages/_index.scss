@@ -64,7 +64,7 @@ main {
   & .instructions-container {
     padding: $mobile-padding;
     & .step-container {
-      @include flexend;
+      @include flexendcolumnbetween;
       width: 100%;
       & .instructions-step {
         margin-bottom: 5px;
@@ -73,7 +73,7 @@ main {
           @include numbericon;
         }
         & .icon-text {
-          @include flexstart;
+          @include flexcenterrowstart;
           @include instructionbtn;
           & i.fa-mobile-screen-button {
             @include stepicon;
@@ -92,7 +92,6 @@ main {
     background-color: $main-background;
     padding: $mobile-padding;
     & .restaurant-tiles-container {
-      /*include flex mixin*/
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -126,11 +125,7 @@ main {
         right: 15px;
       }
       & .text-icon-container {
-        /*insert flex mixin*/
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        @include flexcenterrowbetween;
         padding: 15px;
          & .restaurant-tile-text {
           h3 {
