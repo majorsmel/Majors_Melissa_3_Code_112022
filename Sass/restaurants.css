@@ -151,6 +151,9 @@ main .restaurant-dish-container .restaurant-title .heart-icon:hover i.fa-solidhe
   z-index: 1;
   color: #9356DC;
 }
+main .dish-container .dish-type {
+  position: relative;
+}
 main .dish-container .dish-type h5 {
   font-size: 18px;
   margin-top: 50px;
@@ -161,7 +164,7 @@ main .dish-container .dish-type h5:before {
   width: 45px;
   content: "";
   border-top: 4px solid #99E2D0;
-  top: 155px;
+  top: 30px;
 }
 main .dish-container .dish-type .dishes-container {
   display: flex;

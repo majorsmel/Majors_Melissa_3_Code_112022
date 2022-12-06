@@ -40,6 +40,7 @@ main {
     }
     & .dish-container {
         & .dish-type {
+            position: relative;
             & h5 {
                 font-size: 18px;
                 margin-top: 50px;
@@ -49,7 +50,7 @@ main {
                     width: 45px;
                     content: '';
                     border-top: 4px solid $tertiary;
-                    top: 155px;
+                    top: 30px;
                 }
             }
             & .dishes-container {
