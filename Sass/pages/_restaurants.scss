@@ -13,7 +13,7 @@ main {
         border-top-left-radius: $lg-radius;
         border-top-right-radius: $lg-radius;
         position: relative;
-        top: -60px;
+        margin-top: -60px;
         & .restaurant-title {
             @include flexcenterrowbetween;
             & h1 {
@@ -21,18 +21,19 @@ main {
             }
             & .heart-icon {
                 position: relative;
-                margin-right: 15px;
                 & i.fa-outlineheart {
-                    @include outlineheart-before;
-                    &:hover {
-                      @include outlineheart-after;
-                    }
+                  @include outlineheart-before;
+                }
+                & i.fa-solidheart {
+                  @include solidheart-before;
+                }
+                &:hover, &:active {
+                  & i.fa-outlineheart {
+                    @include outlineheart-after;
                   }
                   & i.fa-solidheart {
-                    @include solidheart-before;
-                    &:hover {
-                      @include solidheart-after;
-                    }
+                    @include solidheart-after;
+                  }
                 }
             }
         }

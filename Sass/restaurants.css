@@ -115,7 +115,7 @@ main .restaurant-dish-container {
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
   position: relative;
-  top: -60px;
+  margin-top: -60px;
 }
 main .restaurant-dish-container .restaurant-title {
   display: flex;
@@ -128,7 +128,6 @@ main .restaurant-dish-container .restaurant-title h1 {
 }
 main .restaurant-dish-container .restaurant-title .heart-icon {
   position: relative;
-  margin-right: 15px;
 }
 main .restaurant-dish-container .restaurant-title .heart-icon i.fa-outlineheart {
   padding: 0px 20px 25px 0px;
@@ -137,17 +136,17 @@ main .restaurant-dish-container .restaurant-title .heart-icon i.fa-outlineheart 
   z-index: 1;
   transition: 0.5s;
 }
-main .restaurant-dish-container .restaurant-title .heart-icon i.fa-outlineheart:hover {
-  cursor: pointer;
-  z-index: -1;
-}
 main .restaurant-dish-container .restaurant-title .heart-icon i.fa-solidheart {
   color: transparent;
   position: absolute;
   right: 10px;
   transition: 0.5s;
 }
-main .restaurant-dish-container .restaurant-title .heart-icon i.fa-solidheart:hover {
+main .restaurant-dish-container .restaurant-title .heart-icon:hover i.fa-outlineheart, main .restaurant-dish-container .restaurant-title .heart-icon:active i.fa-outlineheart {
+  cursor: pointer;
+  z-index: -1;
+}
+main .restaurant-dish-container .restaurant-title .heart-icon:hover i.fa-solidheart, main .restaurant-dish-container .restaurant-title .heart-icon:active i.fa-solidheart {
   cursor: pointer;
   z-index: 1;
   color: #9356DC;

@@ -139,16 +139,19 @@ main {
           position: relative;
           & i.fa-outlineheart {
             @include outlineheart-before;
-            &:hover {
-              @include outlineheart-after;
-            }
           }
           & i.fa-solidheart {
             @include solidheart-before;
-            &:hover {
+          }
+          &:hover, &:active {
+            & i.fa-outlineheart {
+              @include outlineheart-after;
+            }
+            & i.fa-solidheart {
               @include solidheart-after;
             }
           }
+
         }
       }
     }

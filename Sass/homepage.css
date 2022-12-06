@@ -305,17 +305,17 @@ main .restaurants-container .restaurant-tiles-container .text-icon-container .he
   z-index: 1;
   transition: 0.5s;
 }
-main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon i.fa-outlineheart:hover {
-  cursor: pointer;
-  z-index: -1;
-}
 main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon i.fa-solidheart {
   color: transparent;
   position: absolute;
   right: 10px;
   transition: 0.5s;
 }
-main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon i.fa-solidheart:hover {
+main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon:hover i.fa-outlineheart, main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon:active i.fa-outlineheart {
+  cursor: pointer;
+  z-index: -1;
+}
+main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon:hover i.fa-solidheart, main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon:active i.fa-solidheart {
   cursor: pointer;
   z-index: 1;
   color: #9356DC;
