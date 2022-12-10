@@ -25,7 +25,11 @@ footer {
             color: #ffffff;
             font-family: $roboto;
             font-weight: 300;
+            /*Why doesn't the visited color work?*/
+            &:visited {
+                color: #ffffff;
+            }
         }
-       }
+    }
     
 }

@@ -1,7 +1,7 @@
-@mixin boxshadow {
+@mixin boxShadow {
     box-shadow: 0px 5px 10px 0px $shadow;
 }
-@mixin numbericon {
+@mixin numberIcon {
     color: #ffffff;
     font-family: $roboto;
     font-size: 14px;
@@ -13,27 +13,27 @@
     top: 50px;
     right: 15px;
 }
-@mixin stepicon {
+@mixin stepIcon {
     padding: 0px 25px 0px 0px;
-    color: $grayicon;
+    color: $grayIcon;
 }
-@mixin instructionbtn {
+@mixin instructionBtn {
     padding: 30px;
     width: 100%;
-    background-color: $main-background;
+    background-color: $mainBackground;
     border-radius: 20px;
     font-family: $roboto;
-    @include boxshadow;
+    @include boxShadow;
 }
-@mixin dishbtn {
+@mixin dishBtn {
     padding: 15px;
     width: 100%;
     background-color: #ffffff;
     border-radius: 20px;
     font-family: $roboto;
-    @include boxshadow;
+    @include boxShadow;
 }
-@mixin gradientbtn {
+@mixin gradientBtn {
     display: block;
             margin-left: auto;
             margin-right: auto;
@@ -43,62 +43,63 @@
             font-weight:500;
             font-size: 16px;
             padding: 15px 30px;
-            border-radius: $lg-radius;
+            border-radius: $lgRadius;
             background: linear-gradient(to top, $primary 0%, $secondary 100%);
-            @include boxshadow;
+            @include boxShadow;
 }
-@mixin gradientbtnhover {
+@mixin gradientBtnHover {
     filter: brightness(110%);
     box-shadow: 0px 5px 10px 0px #9e9d9d;
     cursor: pointer;
 }
-@mixin outlineheart-before {
+@mixin outlineHeartBefore {
+    color:#000000;
     padding: 0px 20px 25px 0px;
     position: absolute;
     right: -10px;
     z-index: 1;
-    transition: $hover-transition;
+    transition: $hoverTransition;
 }
-@mixin solidheart-before {
+@mixin solidHeartBefore {
     color: transparent;
     position:absolute;
     right: 10px;
-    transition: $hover-transition;
+    transition: $hoverTransition;
 }
-@mixin outlineheart-after {
+@mixin outlineHeartAfter {
     cursor: pointer;
     z-index: -1;
 }
-@mixin solidheart-after {
+@mixin solidHeartAfter {
     cursor: pointer;
     z-index: 1;
     color: $primary;
 }
-@mixin flexcenterrowstart {
+@mixin flexCenterRowStart {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
-@mixin flexendcolumnbetween {
+@mixin flexEndColumnBetween {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
 }
-@mixin flexcenterrowbetween {
+@mixin flexCenterRowBetween {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-@mixin flexendrowbetween {
+@mixin flexEndRowBetween {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
 }
-@mixin flexendcolumnaround {
+@mixin flexEndColumnAround {
     display:flex;
     flex-direction: column;
     justify-content: space-around;

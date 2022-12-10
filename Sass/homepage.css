@@ -15,6 +15,10 @@ a:any-link {
   text-decoration: none;
 }
 
+a:visited {
+  color: #000000;
+}
+
 a:hover {
   cursor: pointer;
 }
@@ -88,6 +92,10 @@ footer ul a {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  /*Why doesn't the visited color work?*/
+}
+footer ul a:visited {
+  color: #ffffff;
 }
 
 header {
@@ -252,7 +260,7 @@ main .restaurants-container {
 main .restaurants-container .restaurant-tiles-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: spaceBetween;
   gap: 20px;
 }
 main .restaurants-container .restaurant-tiles-container .restaurant-tile {
@@ -299,6 +307,7 @@ main .restaurants-container .restaurant-tiles-container .text-icon-container .he
   position: relative;
 }
 main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon i.fa-outlineheart {
+  color: #000000;
   padding: 0px 20px 25px 0px;
   position: absolute;
   right: -10px;

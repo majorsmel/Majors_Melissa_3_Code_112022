@@ -27,14 +27,14 @@
   }
 }
 nav {
-  background-color: $main-background;
+  background-color: $mainBackground;
   padding: 0px 0px 50px 0px;
   & .location {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: $city-background;
+    background-color: $cityBackground;
   }
   & h4 {
     padding: 0px 15px;
@@ -51,10 +51,10 @@ nav {
       margin: 0px 40px 30px 40px;
     }
     & button {
-      @include gradientbtn;
-      transition: $hover-transition;
+      @include gradientBtn;
+      transition: $hoverTransition;
       &:hover {
-        @include gradientbtnhover;
+        @include gradientBtnHover;
       }
     }
   }
@@ -62,52 +62,52 @@ nav {
 
 main {
   & .instructions-container {
-    padding: $mobile-padding;
+    padding: $mobilePadding;
     & .step-container {
-      @include flexendcolumnbetween;
+      @include flexEndColumnBetween;
       width: 100%;
       & .instructions-step {
         margin-bottom: 5px;
         width: 96%;
         & .number {
-          @include numbericon;
+          @include numberIcon;
         }
         & .icon-text {
-          @include flexcenterrowstart;
-          @include instructionbtn;
+          @include flexCenterRowStart;
+          @include instructionBtn;
           & i.fa-mobile-screen-button {
-            @include stepicon;
+            @include stepIcon;
           }
           & i.fa-list-ul {
-            @include stepicon;
+            @include stepIcon;
           }
           & i.fa-store {
-            @include stepicon;
+            @include stepIcon;
           }
         }
       }
     }
   }
   & .restaurants-container {
-    background-color: $main-background;
-    padding: $mobile-padding;
+    background-color: $mainBackground;
+    padding: $mobilePadding;
     & .restaurant-tiles-container {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: spaceBetween;
       gap: 20px;
       & .restaurant-tile {
         position: relative;
         background-color: #ffffff;
-        border-radius: $md-radius;
-        @include boxshadow;
+        border-radius: $mdRadius;
+        @include boxShadow;
         &-image {
           & img {
             object-fit: cover;
             height: 200px;
             width: 100%;
-            border-top-left-radius: $md-radius;
-            border-top-right-radius: $md-radius;
+            border-top-left-radius: $mdRadius;
+            border-top-right-radius: $mdRadius;
             margin-bottom: -5px;
           }
         }
@@ -125,7 +125,7 @@ main {
         right: 15px;
       }
       & .text-icon-container {
-        @include flexcenterrowbetween;
+        @include flexCenterRowBetween;
         padding: 15px;
          & .restaurant-tile-text {
           h3 {
@@ -138,17 +138,17 @@ main {
         & .heart-icon {
           position: relative;
           & i.fa-outlineheart {
-            @include outlineheart-before;
+            @include outlineHeartBefore;
           }
           & i.fa-solidheart {
-            @include solidheart-before;
+            @include solidHeartBefore;
           }
           &:hover, &:active {
             & i.fa-outlineheart {
-              @include outlineheart-after;
+              @include outlineHeartAfter;
             }
             & i.fa-solidheart {
-              @include solidheart-after;
+              @include solidHeartAfter;
             }
           }
 
