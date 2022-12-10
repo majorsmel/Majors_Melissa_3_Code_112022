@@ -167,20 +167,20 @@ main .dish-container .dish-type {
 main .dish-container .dish-type:nth-child(1) {
   -webkit-animation: fade-in 2s forwards;
           animation: fade-in 2s forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 main .dish-container .dish-type:nth-child(2) {
   -webkit-animation: fade-in 2s forwards;
           animation: fade-in 2s forwards;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 main .dish-container .dish-type:nth-child(3) {
   -webkit-animation: fade-in 2s forwards;
           animation: fade-in 2s forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 @-webkit-keyframes fade-in {
   0% {
