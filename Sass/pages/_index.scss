@@ -166,6 +166,7 @@ main {
     justify-content: center;
     & .restaurant-tile {
       flex: 25%;
+      /*Why is there extra space after The Enchanted Plate?*/
     }
   }
 }

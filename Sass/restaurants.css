@@ -229,13 +229,18 @@ main .dish-container .dish-type .dishes-container .dish-banner {
   align-items: flex-end;
   position: relative;
 }
-main .dish-container .dish-type .dishes-container .dish-banner .dish-type h6 {
+main .dish-container .dish-type .dishes-container .dish-banner .dish-name {
+  /*Why doesn't the ellipsis affect build?*/
+}
+main .dish-container .dish-type .dishes-container .dish-banner .dish-name h6 {
   font-size: 22px;
   margin: 15px 0px 0px 15px;
+  text-overflow: ellipsis;
 }
-main .dish-container .dish-type .dishes-container .dish-banner .dish-type p {
+main .dish-container .dish-type .dishes-container .dish-banner .dish-name p {
   margin: 5px 0px 15px 15px;
   font-size: 18px;
+  text-overflow: ellipsis;
 }
 main .dish-container .dish-type .dishes-container .dish-banner .dish-price {
   font-family: "Roboto", sans-serif;
@@ -263,7 +268,7 @@ main .dish-container .dish-type .dishes-container .dish-banner .check-icon .fa-c
   margin-left: 25px;
   margin-top: 50%;
 }
-main .dish-container button {
+main button {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -282,11 +287,25 @@ main .dish-container button {
   padding: 20px 85px;
   transition: 0.5s;
 }
-main .dish-container button:hover {
+main button:hover {
   filter: brightness(110%);
   box-shadow: 0px 5px 10px 0px #9e9d9d;
   cursor: pointer;
 }
 
 /*TABLET*/
+@media (min-width: 641px) {
+  main .restaurant-dish-container .dish-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  main .restaurant-dish-container .dish-container .dish-type {
+    flex: 45%;
+  }
+  main .restaurant-dish-container .dish-container .dish-type h5:before {
+    top: 80px;
+  }
+}
 /*DESKTOP*//*# sourceMappingURL=restaurants.css.map */

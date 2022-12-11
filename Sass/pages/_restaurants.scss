@@ -81,15 +81,18 @@ main {
                     @include dishBtn;
                     @include flexEndRowBetween;
                     position: relative;
-                    & .dish-type {
+                    & .dish-name {
                         & h6 {
                             font-size: 22px;
                             margin: 15px 0px 0px 15px;
+                            text-overflow: ellipsis;
                         }
                         & p {
                             margin: 5px 0px 15px 15px;
                             font-size: 18px;
+                            text-overflow: ellipsis;
                         }
+                        /*Why doesn't the ellipsis affect build?*/
                     }
                     & .dish-price {
                         font-family: $roboto;
@@ -121,23 +124,35 @@ main {
                 }
             }
         }
-        & button {
-            @include gradientBtn;
-            font-size: 18px;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            padding: 20px 85px;
-            transition: $hoverTransition;
-            &:hover {
-                @include gradientBtnHover;
-            }
+    } 
+    & button {
+        @include gradientBtn;
+        font-size: 18px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 20px 85px;
+        transition: $hoverTransition;
+        &:hover {
+            @include gradientBtnHover;
         }
+        
     }
 }
 
 /*TABLET*/
 @media (min-width: 641px) {
-
+    main .restaurant-dish-container .dish-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        & .dish-type {
+            flex: 45%;
+        }
+        & .dish-type h5:before {
+            top: 80px;
+        }
+    }
 }
 
 /*DESKTOP*/

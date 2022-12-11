@@ -339,6 +339,7 @@ main .restaurants-container .restaurant-tiles-container .text-icon-container .he
   }
   main .restaurants-container .restaurant-tiles-container .restaurant-tile {
     flex: 25%;
+    /*Why is there extra space after The Enchanted Plate?*/
   }
 }
 /*DESKTOP*/
