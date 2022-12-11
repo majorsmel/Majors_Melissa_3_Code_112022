@@ -116,9 +116,12 @@ main {
                                 translateX: 0;
                             }*/
                             & .fa-check {
-                                color: #ffffff;
-                                margin-left: 25px;
-                                margin-top: 50%;
+                                color: $tertiary;
+                                margin-left: 20px;
+                                margin-top: 20px;
+                                padding: 20px 5px;
+                                background-color: white;
+                                border-radius: 60px;
                             }
                     }
                 }

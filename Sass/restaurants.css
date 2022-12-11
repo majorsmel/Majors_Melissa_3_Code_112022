@@ -264,9 +264,12 @@ main .dish-container .dish-type .dishes-container .dish-banner .check-icon {
   }*/
 }
 main .dish-container .dish-type .dishes-container .dish-banner .check-icon .fa-check {
-  color: #ffffff;
-  margin-left: 25px;
-  margin-top: 50%;
+  color: #99E2D0;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 20px 5px;
+  background-color: white;
+  border-radius: 60px;
 }
 main button {
   display: block;
