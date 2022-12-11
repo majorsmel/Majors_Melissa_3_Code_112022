@@ -94,7 +94,7 @@ main {
     & .restaurant-tiles-container {
       display: flex;
       flex-direction: column;
-      justify-content: spaceBetween;
+      justify-content: space-between;
       gap: 20px;
       & .restaurant-tile {
         position: relative;
@@ -160,10 +160,23 @@ main {
 
 /*TABLET*/
 @media (min-width: 641px) {
-
+  main .restaurants-container .restaurant-tiles-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    & .restaurant-tile {
+      flex: 25%;
+    }
+  }
 }
 
 /*DESKTOP*/
 @media (min-width: 1008px) {
+  main .instructions-container .step-container {
+    flex-direction: row;
+    gap: 50px;
+    align-items: start;
+    padding: 0px 15px;
+  }
     
 }
