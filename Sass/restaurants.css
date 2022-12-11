@@ -218,7 +218,6 @@ main .dish-container .dish-type .dishes-container {
   gap: 15px;
 }
 main .dish-container .dish-type .dishes-container .dish-banner {
-  padding: 15px;
   width: 100%;
   background-color: #ffffff;
   border-radius: 20px;
@@ -228,19 +227,41 @@ main .dish-container .dish-type .dishes-container .dish-banner {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  position: relative;
 }
-main .dish-container .dish-type .dishes-container .dish-banner h6 {
+main .dish-container .dish-type .dishes-container .dish-banner .dish-type h6 {
   font-size: 22px;
-  margin: 0px;
+  margin: 15px 0px 0px 15px;
 }
-main .dish-container .dish-type .dishes-container .dish-banner p {
-  margin: 5px 0px 0px 0px;
+main .dish-container .dish-type .dishes-container .dish-banner .dish-type p {
+  margin: 5px 0px 15px 15px;
   font-size: 18px;
 }
 main .dish-container .dish-type .dishes-container .dish-banner .dish-price {
   font-family: "Roboto", sans-serif;
+  margin: 0px 0px 15px 0px;
   font-size: 18px;
   font-weight: 900;
+}
+main .dish-container .dish-type .dishes-container .dish-banner .check-icon {
+  background-color: #99E2D0;
+  border-radius: 0px 20px 20px 0px;
+  position: absolute;
+  height: 100%;
+  width: 80px;
+  right: 0px;
+  /*Need to adde wipe-in style animation
+  and check clockwise rotation on hover.
+  Fix price not showing (hiding under check div)
+  animation: slide-in 1s forwards;
+  @keyframe slide-in {
+      translateX: 0;
+  }*/
+}
+main .dish-container .dish-type .dishes-container .dish-banner .check-icon .fa-check {
+  color: #ffffff;
+  margin-left: 25px;
+  margin-top: 50%;
 }
 main .dish-container button {
   display: block;

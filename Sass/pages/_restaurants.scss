@@ -80,18 +80,43 @@ main {
                 & .dish-banner {
                     @include dishBtn;
                     @include flexEndRowBetween;
-                    & h6 {
-                        font-size: 22px;
-                        margin: 0px;
-                    }
-                    & p {
-                        margin: 5px 0px 0px 0px;
-                        font-size: 18px;
+                    position: relative;
+                    & .dish-type {
+                        & h6 {
+                            font-size: 22px;
+                            margin: 15px 0px 0px 15px;
+                        }
+                        & p {
+                            margin: 5px 0px 15px 15px;
+                            font-size: 18px;
+                        }
                     }
                     & .dish-price {
                         font-family: $roboto;
+                        margin: 0px 0px 15px 0px;
                         font-size: 18px;
                         font-weight: 900;
+                    }
+                
+                    & .check-icon {
+                            background-color: $tertiary;
+                            border-radius: 0px 20px 20px 0px;
+                            position: absolute;
+                            height: 100%;
+                            width: 80px;
+                            right: 0px;
+                            /*Need to adde wipe-in style animation
+                            and check clockwise rotation on hover.
+                            Fix price not showing (hiding under check div)
+                            animation: slide-in 1s forwards;
+                            @keyframe slide-in {
+                                translateX: 0;
+                            }*/
+                            & .fa-check {
+                                color: #ffffff;
+                                margin-left: 25px;
+                                margin-top: 50%;
+                            }
                     }
                 }
             }
