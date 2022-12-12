@@ -78,6 +78,16 @@ main {
                 @include flexEndColumnAround;
                 gap: 15px;
                 & .dish-banner {
+                    &:hover, &:active {
+                        cursor: pointer;
+                        & .check-icon {
+                            transform: scaleX(1);
+                        }
+                        & .fa-check {
+                            transform: rotate(360deg);
+                        }
+                    }
+
                     @include dishBtn;
                     @include flexEndRowBetween;
                     position: relative;
@@ -96,11 +106,10 @@ main {
                     }
                     & .dish-price {
                         font-family: $roboto;
-                        margin: 0px 0px 15px 0px;
+                        margin: 0px 25px 15px 0px;
                         font-size: 18px;
                         font-weight: 900;
                     }
-                
                     & .check-icon {
                             background-color: $tertiary;
                             border-radius: 0px 20px 20px 0px;
@@ -108,13 +117,12 @@ main {
                             height: 100%;
                             width: 80px;
                             right: 0px;
+                            transform: scaleX(0);
+                            transform-origin: right;
+                            transition: transform 500ms;
+
                             /*Need to adde wipe-in style animation
-                            and check clockwise rotation on hover.
-                            Fix price not showing (hiding under check div)
-                            animation: slide-in 1s forwards;
-                            @keyframe slide-in {
-                                translateX: 0;
-                            }*/
+                            Fix price not showing (hiding under check div)*/    
                             & .fa-check {
                                 color: $tertiary;
                                 margin-left: 20px;
@@ -122,6 +130,7 @@ main {
                                 padding: 20px 5px;
                                 background-color: white;
                                 border-radius: 60px;
+                                transition: transform 500ms;
                             }
                     }
                 }

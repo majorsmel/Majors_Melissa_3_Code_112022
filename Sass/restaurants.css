@@ -229,6 +229,15 @@ main .dish-container .dish-type .dishes-container .dish-banner {
   align-items: flex-end;
   position: relative;
 }
+main .dish-container .dish-type .dishes-container .dish-banner:hover, main .dish-container .dish-type .dishes-container .dish-banner:active {
+  cursor: pointer;
+}
+main .dish-container .dish-type .dishes-container .dish-banner:hover .check-icon, main .dish-container .dish-type .dishes-container .dish-banner:active .check-icon {
+  transform: scaleX(1);
+}
+main .dish-container .dish-type .dishes-container .dish-banner:hover .fa-check, main .dish-container .dish-type .dishes-container .dish-banner:active .fa-check {
+  transform: rotate(360deg);
+}
 main .dish-container .dish-type .dishes-container .dish-banner .dish-name {
   /*Why doesn't the ellipsis affect build?*/
 }
@@ -244,7 +253,7 @@ main .dish-container .dish-type .dishes-container .dish-banner .dish-name p {
 }
 main .dish-container .dish-type .dishes-container .dish-banner .dish-price {
   font-family: "Roboto", sans-serif;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 25px 15px 0px;
   font-size: 18px;
   font-weight: 900;
 }
@@ -255,13 +264,11 @@ main .dish-container .dish-type .dishes-container .dish-banner .check-icon {
   height: 100%;
   width: 80px;
   right: 0px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 500ms;
   /*Need to adde wipe-in style animation
-  and check clockwise rotation on hover.
-  Fix price not showing (hiding under check div)
-  animation: slide-in 1s forwards;
-  @keyframe slide-in {
-      translateX: 0;
-  }*/
+  Fix price not showing (hiding under check div)*/
 }
 main .dish-container .dish-type .dishes-container .dish-banner .check-icon .fa-check {
   color: #99E2D0;
@@ -270,6 +277,7 @@ main .dish-container .dish-type .dishes-container .dish-banner .check-icon .fa-c
   padding: 20px 5px;
   background-color: white;
   border-radius: 60px;
+  transition: transform 500ms;
 }
 main button {
   display: block;
