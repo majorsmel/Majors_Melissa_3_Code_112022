@@ -1,3 +1,6 @@
+/*Gradent Buttons*/
+/*Heart Icon*/
+/*Flexbox*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
@@ -209,8 +212,8 @@ main .instructions-container {
 main .instructions-container .step-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: flex-end;
+  justify-content: space-between;
   width: 100%;
 }
 main .instructions-container .step-container .instructions-step {
@@ -232,8 +235,8 @@ main .instructions-container .step-container .instructions-step .number {
 main .instructions-container .step-container .instructions-step .icon-text {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   padding: 30px;
   width: 100%;
   background-color: #ededed;
@@ -293,8 +296,8 @@ main .restaurants-container .restaurant-tiles-container .new-tag {
 main .restaurants-container .restaurant-tiles-container .text-icon-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 15px;
 }
 main .restaurants-container .restaurant-tiles-container .text-icon-container .restaurant-tile-text h3 {

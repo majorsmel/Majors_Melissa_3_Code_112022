@@ -1,3 +1,6 @@
+/*Gradent Buttons*/
+/*Heart Icon*/
+/*Flexbox*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
@@ -128,8 +131,8 @@ main .restaurant-dish-container {
 main .restaurant-dish-container .restaurant-title {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 main .restaurant-dish-container .restaurant-title h1 {
   font-size: 32px;
@@ -213,8 +216,8 @@ main .dish-container .dish-type h5:before {
 main .dish-container .dish-type .dishes-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: flex-end;
+  justify-content: space-around;
   gap: 15px;
 }
 main .dish-container .dish-type .dishes-container .dish-banner {

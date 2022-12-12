@@ -32,6 +32,8 @@
     font-family: $roboto;
     @include boxShadow;
 }
+
+/*Gradent Buttons*/
 @mixin gradientBtn {
     display: block;
             margin-left: auto;
@@ -51,6 +53,8 @@
     box-shadow: 0px 5px 10px 0px #9e9d9d;
     cursor: pointer;
 }
+
+/*Heart Icon*/
 @mixin outlineHeartBefore {
     color:#000000;
     padding: 0px 20px 25px 0px;
@@ -74,33 +78,15 @@
     z-index: 1;
     color: $primary;
 }
-@mixin flexCenterRowStart {
+
+/*Flexbox*/
+@mixin flexRowCenter{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
 }
-@mixin flexEndColumnBetween {
+@mixin flexColumnEnd {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-@mixin flexCenterRowBetween {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-@mixin flexEndRowBetween {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-@mixin flexEndColumnAround {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
     align-items: flex-end;
 }
