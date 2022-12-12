@@ -68,13 +68,16 @@ body {
 
 footer {
   background-color: #464040;
-  color: #ffffff;
   padding: 30px 25px 10px 25px;
 }
 footer h1 {
   margin: 0px;
   font-size: 18px;
   font-weight: 100;
+  color: #ffffff;
+}
+footer h1 a:visited {
+  color: #ffffff;
 }
 footer ul {
   list-style-type: none;
@@ -95,7 +98,6 @@ footer ul a {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  /*Why doesn't the visited color work?*/
 }
 footer ul a:visited {
   color: #ffffff;
