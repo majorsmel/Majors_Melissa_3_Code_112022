@@ -95,18 +95,23 @@ main {
                     justify-content: space-between;
                     align-items: flex-end;
                     position: relative;
+                    overflow: hidden;
                     & .dish-name {
                         & h6 {
                             font-size: 22px;
                             margin: 15px 0px 0px 15px;
-                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis; 
                         }
                         & p {
                             margin: 5px 0px 15px 15px;
                             font-size: 18px;
+                            white-space: nowrap;
+                            overflow: hidden;
                             text-overflow: ellipsis;
                         }
-                        /*Why doesn't the ellipsis affect build?*/
+                        /*Why doesn't the ellipsis appear?*/
                     }
                     & .dish-price {
                         font-family: $roboto;
@@ -125,8 +130,7 @@ main {
                             transform-origin: right;
                             transition: transform 500ms;
 
-                            /*Need to adde wipe-in style animation
-                            Fix price not showing (hiding under check div)*/    
+                           /*Fix price not showing (hiding under check div)*/    
                             & .fa-check {
                                 color: $tertiary;
                                 margin-left: 20px;

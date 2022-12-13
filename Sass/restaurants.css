@@ -233,6 +233,7 @@ main .dish-container .dish-type .dishes-container .dish-banner {
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+  overflow: hidden;
 }
 main .dish-container .dish-type .dishes-container .dish-banner:hover, main .dish-container .dish-type .dishes-container .dish-banner:active {
   cursor: pointer;
@@ -244,16 +245,20 @@ main .dish-container .dish-type .dishes-container .dish-banner:hover .fa-check, 
   transform: rotate(360deg);
 }
 main .dish-container .dish-type .dishes-container .dish-banner .dish-name {
-  /*Why doesn't the ellipsis affect build?*/
+  /*Why doesn't the ellipsis appear?*/
 }
 main .dish-container .dish-type .dishes-container .dish-banner .dish-name h6 {
   font-size: 22px;
   margin: 15px 0px 0px 15px;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 main .dish-container .dish-type .dishes-container .dish-banner .dish-name p {
   margin: 5px 0px 15px 15px;
   font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 main .dish-container .dish-type .dishes-container .dish-banner .dish-price {
@@ -272,8 +277,7 @@ main .dish-container .dish-type .dishes-container .dish-banner .check-icon {
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 500ms;
-  /*Need to adde wipe-in style animation
-  Fix price not showing (hiding under check div)*/
+  /*Fix price not showing (hiding under check div)*/
 }
 main .dish-container .dish-type .dishes-container .dish-banner .check-icon .fa-check {
   color: #99E2D0;
