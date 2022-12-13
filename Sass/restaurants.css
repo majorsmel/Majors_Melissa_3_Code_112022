@@ -275,8 +275,6 @@ main .dish-container .dish-type .dishes-container .dish-banner .check-icon {
   background-color: #99E2D0;
   border-radius: 0px 20px 20px 0px;
   height: 90px;
-  width: 80px;
-  right: 0px;
   flex: 0%;
   transform: scaleX(0);
   transform-origin: right;
