@@ -84,6 +84,7 @@ main {
                         cursor: pointer;
                         & .check-icon {
                             transform: scaleX(1);
+                            flex: 20%;
                         }
                         & .fa-check {
                             transform: rotate(360deg);
@@ -97,6 +98,8 @@ main {
                     position: relative;
                     overflow: hidden;
                     & .dish-name {
+                        min-width: 200px;
+                        flex: 70%;
                         & h6 {
                             font-size: 22px;
                             margin: 15px 0px 0px 15px;
@@ -111,26 +114,24 @@ main {
                             overflow: hidden;
                             text-overflow: ellipsis;
                         }
-                        /*Why doesn't the ellipsis appear?*/
                     }
                     & .dish-price {
                         font-family: $roboto;
-                        margin: 0px 25px 15px 0px;
+                        margin: 0px 0px 15px 0px;
                         font-size: 18px;
                         font-weight: 900;
+                        flex: 10%;
                     }
                     & .check-icon {
                             background-color: $tertiary;
                             border-radius: 0px 20px 20px 0px;
-                            position: absolute;
-                            height: 100%;
+                            height: 90px;
                             width: 80px;
                             right: 0px;
+                            flex: 0%;
                             transform: scaleX(0);
                             transform-origin: right;
-                            transition: transform 500ms;
-
-                           /*Fix price not showing (hiding under check div)*/    
+                            transition: transform 500ms; 
                             & .fa-check {
                                 color: $tertiary;
                                 margin-left: 20px;

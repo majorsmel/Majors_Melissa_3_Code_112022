@@ -224,6 +224,7 @@ main .dish-container .dish-type .dishes-container {
 }
 main .dish-container .dish-type .dishes-container .dish-banner {
   width: 100%;
+  height: 90px;
   background-color: #ffffff;
   border-radius: 20px;
   font-family: "Roboto", sans-serif;
@@ -240,12 +241,14 @@ main .dish-container .dish-type .dishes-container .dish-banner:hover, main .dish
 }
 main .dish-container .dish-type .dishes-container .dish-banner:hover .check-icon, main .dish-container .dish-type .dishes-container .dish-banner:active .check-icon {
   transform: scaleX(1);
+  flex: 20%;
 }
 main .dish-container .dish-type .dishes-container .dish-banner:hover .fa-check, main .dish-container .dish-type .dishes-container .dish-banner:active .fa-check {
   transform: rotate(360deg);
 }
 main .dish-container .dish-type .dishes-container .dish-banner .dish-name {
-  /*Why doesn't the ellipsis appear?*/
+  min-width: 200px;
+  flex: 70%;
 }
 main .dish-container .dish-type .dishes-container .dish-banner .dish-name h6 {
   font-size: 22px;
@@ -263,21 +266,21 @@ main .dish-container .dish-type .dishes-container .dish-banner .dish-name p {
 }
 main .dish-container .dish-type .dishes-container .dish-banner .dish-price {
   font-family: "Roboto", sans-serif;
-  margin: 0px 25px 15px 0px;
+  margin: 0px 0px 15px 0px;
   font-size: 18px;
   font-weight: 900;
+  flex: 10%;
 }
 main .dish-container .dish-type .dishes-container .dish-banner .check-icon {
   background-color: #99E2D0;
   border-radius: 0px 20px 20px 0px;
-  position: absolute;
-  height: 100%;
+  height: 90px;
   width: 80px;
   right: 0px;
+  flex: 0%;
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 500ms;
-  /*Fix price not showing (hiding under check div)*/
 }
 main .dish-container .dish-type .dishes-container .dish-banner .check-icon .fa-check {
   color: #99E2D0;
