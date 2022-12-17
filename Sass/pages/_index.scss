@@ -94,67 +94,72 @@ main {
     background-color: $mainBackground;
     padding: $mobilePadding;
     & .restaurant-tiles-container {
-      display: flex;
-      flex-direction: column;
+      @include flexColumnCenter;
       justify-content: space-between;
       gap: 20px;
-      & .restaurant-tile {
-        position: relative;
-        background-color: #ffffff;
-        border-radius: $mdRadius;
-        @include boxShadow;
-        &-image {
-          & img {
-            object-fit: cover;
-            height: 200px;
-            width: 100%;
-            border-top-left-radius: $mdRadius;
-            border-top-right-radius: $mdRadius;
-            margin-bottom: -5px;
-          }
-        }
-      }
-      & .new-tag {
-        font-family: $roboto;
-        font-size: 14px;
-        color: #65aa99;
-        background-color: $tertiary;
-        display: inline;
-        padding: 5px 25px;
-        border-radius: 2px;
-        position: absolute;
-        top:15px;
-        right: 15px;
-      }
-      & .text-icon-container {
-        @include flexRowCenter;
+      & .restaurant-tiles-flex {
+        @include flexColumnCenter;
         justify-content: space-between;
-        padding: 15px;
-         & .restaurant-tile-text {
-          h3 {
-            margin: 0px;;
-          }
-          p {
-            margin: 0px;
+        gap: 20px;
+        & .restaurant-tile {
+          position: relative;
+          background-color: #ffffff;
+          border-radius: $mdRadius;
+          @include boxShadow;
+          &-image {
+            & img {
+              object-fit: cover;
+              height: 200px;
+              width: 100%;
+              border-top-left-radius: $mdRadius;
+              border-top-right-radius: $mdRadius;
+              margin-bottom: -5px;
+            }
           }
         }
-        & .heart-icon {
-          position: relative;
-          & i.fa-outlineheart {
-            @include outlineHeartBefore;
+        & .new-tag {
+          font-family: $roboto;
+          font-size: 14px;
+          color: #65aa99;
+          background-color: $tertiary;
+          display: inline;
+          padding: 5px 25px;
+          border-radius: 2px;
+          position: absolute;
+          top:15px;
+          right: 15px;
+        }
+        & .text-icon-container {
+          @include flexRowCenter;
+          justify-content: space-between;
+          padding: 15px;
+          & .restaurant-tile-text {
+            h3 {
+              margin: 0px;
+              font-size: 18px;
+            }
+            p {
+              margin: 0px;
+              font-size: 18px;
+            }
           }
-          & i.fa-solidheart {
-            @include solidHeartBefore;
-          }
-          &:hover, &:active {
+          & .heart-icon {
+            position: relative;
             & i.fa-outlineheart {
-              @include outlineHeartAfter;
+              @include outlineHeartBefore;
             }
             & i.fa-solidheart {
-              @include solidHeartAfter;
+              @include solidHeartBefore;
+            }
+            &:hover, &:active {
+              & i.fa-outlineheart {
+                @include outlineHeartAfter;
+              }
+              & i.fa-solidheart {
+                @include solidHeartAfter;
+              }
             }
           }
-
         }
       }
     }
@@ -169,7 +174,21 @@ main {
     justify-content: center;
     & .restaurant-tile {
       flex: 25%;
-      /*Why is there extra space after The Enchanted Plate?*/
+    }
+  }
+  nav {
+    & h4 {
+      font-size: 18px;
+    } 
+    & .description {
+      & h2 {
+        font-size: 50px;
+        letter-spacing: 3px;
+        margin: 20px;
+      }
+      & p {
+        font-size: 25px;
+      }
     }
   }
 }
@@ -182,5 +201,16 @@ main {
     align-items: start;
     padding: 0px 15px;
   }
+  nav {
+    & .description {
+      & h2 {
+        font-size: 72px;
+      }
+      & p {
+        font-size: 36px;
+      }
+    }
+  }
     
 }
+  

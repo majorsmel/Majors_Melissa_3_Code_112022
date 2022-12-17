@@ -195,7 +195,7 @@ nav .description button {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   padding: 15px 30px;
   border-radius: 45px;
   background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
@@ -244,6 +244,7 @@ main .instructions-container .step-container .instructions-step .icon-text {
   background-color: #ededed;
   border-radius: 20px;
   font-family: "Roboto", sans-serif;
+  font-size: 18px;
   box-shadow: 0px 5px 10px 0px #cccccc;
 }
 main .instructions-container .step-container .instructions-step .icon-text i.fa-mobile-screen-button {
@@ -265,16 +266,24 @@ main .restaurants-container {
 main .restaurants-container .restaurant-tiles-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tile {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .restaurant-tile {
   position: relative;
   background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0px 5px 10px 0px #cccccc;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tile-image img {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .restaurant-tile-image img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 200px;
@@ -283,7 +292,7 @@ main .restaurants-container .restaurant-tiles-container .restaurant-tile-image i
   border-top-right-radius: 15px;
   margin-bottom: -5px;
 }
-main .restaurants-container .restaurant-tiles-container .new-tag {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .new-tag {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #65aa99;
@@ -295,23 +304,25 @@ main .restaurants-container .restaurant-tiles-container .new-tag {
   top: 15px;
   right: 15px;
 }
-main .restaurants-container .restaurant-tiles-container .text-icon-container {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
 }
-main .restaurants-container .restaurant-tiles-container .text-icon-container .restaurant-tile-text h3 {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .restaurant-tile-text h3 {
   margin: 0px;
+  font-size: 18px;
 }
-main .restaurants-container .restaurant-tiles-container .text-icon-container .restaurant-tile-text p {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .restaurant-tile-text p {
   margin: 0px;
+  font-size: 18px;
 }
-main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon {
   position: relative;
 }
-main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon i.fa-outlineheart {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon i.fa-outlineheart {
   color: #000000;
   padding: 0px 20px 25px 0px;
   position: absolute;
@@ -319,17 +330,17 @@ main .restaurants-container .restaurant-tiles-container .text-icon-container .he
   z-index: 1;
   transition: 0.5s;
 }
-main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon i.fa-solidheart {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon i.fa-solidheart {
   color: transparent;
   position: absolute;
   right: 10px;
   transition: 0.5s;
 }
-main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon:hover i.fa-outlineheart, main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon:active i.fa-outlineheart {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon:hover i.fa-outlineheart, main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon:active i.fa-outlineheart {
   cursor: pointer;
   z-index: -1;
 }
-main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon:hover i.fa-solidheart, main .restaurants-container .restaurant-tiles-container .text-icon-container .heart-icon:active i.fa-solidheart {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon:hover i.fa-solidheart, main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon:active i.fa-solidheart {
   cursor: pointer;
   z-index: 1;
   color: #9356DC;
@@ -344,7 +355,17 @@ main .restaurants-container .restaurant-tiles-container .text-icon-container .he
   }
   main .restaurants-container .restaurant-tiles-container .restaurant-tile {
     flex: 25%;
-    /*Why is there extra space after The Enchanted Plate?*/
+  }
+  nav h4 {
+    font-size: 18px;
+  }
+  nav .description h2 {
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin: 20px;
+  }
+  nav .description p {
+    font-size: 25px;
   }
 }
 /*DESKTOP*/
@@ -354,5 +375,11 @@ main .restaurants-container .restaurant-tiles-container .text-icon-container .he
     gap: 50px;
     align-items: start;
     padding: 0px 15px;
+  }
+  nav .description h2 {
+    font-size: 72px;
+  }
+  nav .description p {
+    font-size: 36px;
   }
 }/*# sourceMappingURL=homepage.css.map */
