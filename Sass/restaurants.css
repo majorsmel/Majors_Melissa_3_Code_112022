@@ -328,8 +328,27 @@ main button:hover {
 }
 /*DESKTOP*/
 @media (min-width: 1008px) {
+  main .restaurant-dish-container .restaurant-title {
+    display: block;
+  }
+  main .restaurant-dish-container .restaurant-title h1 {
+    text-align: center;
+  }
+  main .restaurant-dish-container .restaurant-title .heart-icon i.fa-outlineheart {
+    bottom: 0px;
+  }
+  main .restaurant-dish-container .restaurant-title .heart-icon i.fa-solidheart {
+    bottom: 25px;
+  }
+  main .restaurant-dish-container .dish-container .dish-type h5 {
+    text-align: center;
+  }
+  main .restaurant-dish-container .dish-container .dish-type h5:before {
+    margin-left: 20px;
+  }
   main .restaurant-dish-container .dish-container .dish-type .dishes-container.dessert {
-    align-items: flex-start;
+    align-content: space-around;
+    flex-wrap: wrap;
   }
   main .restaurant-dish-container .dish-container .dish-type .dishes-container.dessert .dish-banner.dessert {
     width: 47%;

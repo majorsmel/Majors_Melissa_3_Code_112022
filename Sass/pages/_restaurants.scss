@@ -173,10 +173,35 @@ main {
 
 /*DESKTOP*/
 @media (min-width: 1008px) {
-    main .restaurant-dish-container .dish-container .dish-type .dishes-container.dessert {
-        align-items: flex-start;
-        & .dish-banner.dessert {
-            width: 47%;
+    main .restaurant-dish-container {
+        & .restaurant-title {
+            display: block;
+            & h1 {
+                text-align: center;
+            }
+            & .heart-icon {
+                & i.fa-outlineheart {
+                    bottom: 0px;
+                }
+                & i.fa-solidheart {
+                    bottom: 25px;
+                }
+            }
+        }
+        & .dish-container .dish-type {
+            h5 {
+            text-align: center;
+            &:before {
+                margin-left: 20px;
+            }
+            }
+            & .dishes-container.dessert {
+                align-content: space-around;
+                flex-wrap: wrap;
+                & .dish-banner.dessert {
+                    width: 47%;
+                }
+            }
         }
     }
 }
