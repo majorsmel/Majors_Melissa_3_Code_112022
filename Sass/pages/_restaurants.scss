@@ -38,7 +38,6 @@ main {
                 }
             }
         }
-    }
     & .dish-container {
         & .dish-type {
             opacity: 0%;
@@ -83,7 +82,7 @@ main {
                     &:hover, &:active {
                         cursor: pointer;
                         & .check-icon {
-                            width: 20%;
+                            width: 30%;
                         }
                         & .fa-check {
                             transform: rotate(360deg);
@@ -141,6 +140,7 @@ main {
             }
         }
     } 
+}
     & button {
         @include gradientBtn;
         font-size: 18px;
@@ -173,5 +173,10 @@ main {
 
 /*DESKTOP*/
 @media (min-width: 1008px) {
-    
+    main .restaurant-dish-container .dish-container .dish-type .dishes-container.dessert {
+        align-items: flex-start;
+        & .dish-banner.dessert {
+            width: 47%;
+        }
+    }
 }

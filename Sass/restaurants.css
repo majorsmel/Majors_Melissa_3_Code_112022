@@ -165,23 +165,23 @@ main .restaurant-dish-container .restaurant-title .heart-icon:hover i.fa-solidhe
   z-index: 1;
   color: #9356DC;
 }
-main .dish-container .dish-type {
+main .restaurant-dish-container .dish-container .dish-type {
   opacity: 0%;
   position: relative;
 }
-main .dish-container .dish-type:nth-child(1) {
+main .restaurant-dish-container .dish-container .dish-type:nth-child(1) {
   -webkit-animation: fade-in 2s forwards;
           animation: fade-in 2s forwards;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
-main .dish-container .dish-type:nth-child(2) {
+main .restaurant-dish-container .dish-container .dish-type:nth-child(2) {
   -webkit-animation: fade-in 2s forwards;
           animation: fade-in 2s forwards;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
-main .dish-container .dish-type:nth-child(3) {
+main .restaurant-dish-container .dish-container .dish-type:nth-child(3) {
   -webkit-animation: fade-in 2s forwards;
           animation: fade-in 2s forwards;
   -webkit-animation-delay: 1.5s;
@@ -203,11 +203,11 @@ main .dish-container .dish-type:nth-child(3) {
     opacity: 100%;
   }
 }
-main .dish-container .dish-type h5 {
+main .restaurant-dish-container .dish-container .dish-type h5 {
   font-size: 18px;
   margin-top: 50px;
 }
-main .dish-container .dish-type h5:before {
+main .restaurant-dish-container .dish-container .dish-type h5:before {
   position: absolute;
   height: 0;
   width: 45px;
@@ -215,14 +215,14 @@ main .dish-container .dish-type h5:before {
   border-top: 4px solid #99E2D0;
   top: 30px;
 }
-main .dish-container .dish-type .dishes-container {
+main .restaurant-dish-container .dish-container .dish-type .dishes-container {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-around;
   gap: 15px;
 }
-main .dish-container .dish-type .dishes-container .dish-banner {
+main .restaurant-dish-container .dish-container .dish-type .dishes-container .dish-banner {
   width: 100%;
   height: 90px;
   background-color: #ffffff;
@@ -236,48 +236,48 @@ main .dish-container .dish-type .dishes-container .dish-banner {
   position: relative;
   overflow: hidden;
 }
-main .dish-container .dish-type .dishes-container .dish-banner:hover, main .dish-container .dish-type .dishes-container .dish-banner:active {
+main .restaurant-dish-container .dish-container .dish-type .dishes-container .dish-banner:hover, main .restaurant-dish-container .dish-container .dish-type .dishes-container .dish-banner:active {
   cursor: pointer;
 }
-main .dish-container .dish-type .dishes-container .dish-banner:hover .check-icon, main .dish-container .dish-type .dishes-container .dish-banner:active .check-icon {
-  width: 20%;
+main .restaurant-dish-container .dish-container .dish-type .dishes-container .dish-banner:hover .check-icon, main .restaurant-dish-container .dish-container .dish-type .dishes-container .dish-banner:active .check-icon {
+  width: 30%;
 }
-main .dish-container .dish-type .dishes-container .dish-banner:hover .fa-check, main .dish-container .dish-type .dishes-container .dish-banner:active .fa-check {
+main .restaurant-dish-container .dish-container .dish-type .dishes-container .dish-banner:hover .fa-check, main .restaurant-dish-container .dish-container .dish-type .dishes-container .dish-banner:active .fa-check {
   transform: rotate(360deg);
 }
-main .dish-container .dish-type .dishes-container .dish-banner .dish-name {
+main .restaurant-dish-container .dish-container .dish-type .dishes-container .dish-banner .dish-name {
   min-width: 200px;
   flex: 85%;
 }
-main .dish-container .dish-type .dishes-container .dish-banner .dish-name h6 {
+main .restaurant-dish-container .dish-container .dish-type .dishes-container .dish-banner .dish-name h6 {
   font-size: 22px;
   margin: 15px 0px 0px 15px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-main .dish-container .dish-type .dishes-container .dish-banner .dish-name p {
+main .restaurant-dish-container .dish-container .dish-type .dishes-container .dish-banner .dish-name p {
   margin: 5px 0px 15px 15px;
   font-size: 18px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-main .dish-container .dish-type .dishes-container .dish-banner .dish-price {
+main .restaurant-dish-container .dish-container .dish-type .dishes-container .dish-banner .dish-price {
   font-family: "Roboto", sans-serif;
   margin: 0px 0px 15px 0px;
   font-size: 18px;
   font-weight: 900;
   flex: 15%;
 }
-main .dish-container .dish-type .dishes-container .dish-banner .check-icon {
+main .restaurant-dish-container .dish-container .dish-type .dishes-container .dish-banner .check-icon {
   background-color: #99E2D0;
   border-radius: 0px 20px 20px 0px;
   height: 90px;
   width: 0%;
   transition: width 500ms;
 }
-main .dish-container .dish-type .dishes-container .dish-banner .check-icon .fa-check {
+main .restaurant-dish-container .dish-container .dish-type .dishes-container .dish-banner .check-icon .fa-check {
   color: #99E2D0;
   margin-left: 30%;
   margin-top: 25px;
@@ -326,4 +326,12 @@ main button:hover {
     top: 80px;
   }
 }
-/*DESKTOP*//*# sourceMappingURL=restaurants.css.map */
+/*DESKTOP*/
+@media (min-width: 1008px) {
+  main .restaurant-dish-container .dish-container .dish-type .dishes-container.dessert {
+    align-items: flex-start;
+  }
+  main .restaurant-dish-container .dish-container .dish-type .dishes-container.dessert .dish-banner.dessert {
+    width: 47%;
+  }
+}/*# sourceMappingURL=restaurants.css.map */

@@ -281,9 +281,10 @@ main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .
   position: relative;
   background-color: #ffffff;
   border-radius: 15px;
+  width: 320px;
   box-shadow: 0px 5px 10px 0px #cccccc;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .restaurant-tile-image img {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .restaurant-tile img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 200px;
@@ -295,7 +296,7 @@ main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .
 main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .new-tag {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
-  color: #65aa99;
+  color: #2f8770;
   background-color: #99E2D0;
   display: inline;
   padding: 5px 25px;
@@ -353,8 +354,11 @@ main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .
     flex-wrap: wrap;
     justify-content: center;
   }
-  main .restaurants-container .restaurant-tiles-container .restaurant-tile {
-    flex: 25%;
+  main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex {
+    flex-direction: row;
+  }
+  main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .restaurant-tile {
+    min-width: 305px;
   }
   nav h4 {
     font-size: 18px;
@@ -375,6 +379,9 @@ main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .
     gap: 50px;
     align-items: start;
     padding: 0px 15px;
+  }
+  main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .restaurant-tile {
+    min-width: 450px;
   }
   nav .description h2 {
     font-size: 72px;

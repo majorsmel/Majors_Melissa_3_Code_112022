@@ -105,8 +105,9 @@ main {
           position: relative;
           background-color: #ffffff;
           border-radius: $mdRadius;
+          width: 320px;
           @include boxShadow;
-          &-image {
+          
             & img {
               object-fit: cover;
               height: 200px;
@@ -115,12 +116,12 @@ main {
               border-top-right-radius: $mdRadius;
               margin-bottom: -5px;
             }
-          }
+          
         }
         & .new-tag {
           font-family: $roboto;
           font-size: 14px;
-          color: #65aa99;
+          color: #2f8770;
           background-color: $tertiary;
           display: inline;
           padding: 5px 25px;
@@ -172,8 +173,11 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    & .restaurant-tile {
-      flex: 25%;
+    & .restaurant-tiles-flex {
+      flex-direction: row;
+      & .restaurant-tile {
+        min-width: 305px;
+      }
     }
   }
   nav {
@@ -200,6 +204,9 @@ main {
     gap: 50px;
     align-items: start;
     padding: 0px 15px;
+  }
+  main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .restaurant-tile {
+      min-width: 450px;
   }
   nav {
     & .description {
