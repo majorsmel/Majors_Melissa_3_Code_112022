@@ -277,6 +277,12 @@ main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex {
   justify-content: space-between;
   gap: 20px;
 }
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a {
+  color: #000000;
+}
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a:hover {
+  cursor: pointer;
+}
 main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .restaurant-tile {
   position: relative;
   background-color: #ffffff;

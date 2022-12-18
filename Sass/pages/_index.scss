@@ -101,13 +101,18 @@ main {
         @include flexColumnCenter;
         justify-content: space-between;
         gap: 20px;
+        & a {
+          color: #000000;
+          &:hover {
+            cursor: pointer;
+          }
+        }
         & .restaurant-tile {
           position: relative;
           background-color: #ffffff;
           border-radius: $mdRadius;
           width: 320px;
           @include boxShadow;
-          
             & img {
               object-fit: cover;
               height: 200px;
@@ -116,7 +121,6 @@ main {
               border-top-right-radius: $mdRadius;
               margin-bottom: -5px;
             }
-          
         }
         & .new-tag {
           font-family: $roboto;
