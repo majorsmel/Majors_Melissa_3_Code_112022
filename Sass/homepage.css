@@ -355,6 +355,16 @@ main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .
 
 /*TABLET*/
 @media (min-width: 641px) {
+  main .instructions-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  main .restaurants-container h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 28px;
+  }
   main .restaurants-container .restaurant-tiles-container {
     flex-direction: row;
     flex-wrap: wrap;
