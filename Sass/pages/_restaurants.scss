@@ -1,3 +1,7 @@
+header i {
+    position: absolute;
+    margin: 15px 30px;
+}
 main {
     & .restaurant-img {
         img {
@@ -135,12 +139,12 @@ main {
                                 border-radius: 60px;
                                 transition: transform 500ms;
                             }
+                        }    
                     }
                 }
             }
         }
     } 
-}
     & button {
         @include gradientBtn;
         font-size: 18px;
