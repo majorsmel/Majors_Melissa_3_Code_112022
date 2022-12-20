@@ -122,7 +122,10 @@ header {
   padding: 25px 0px 15px 0px;
   margin: 0px 0px 3px 0px;
 }
-header img {
+header a:visited {
+  color: #000000;
+}
+header a img {
   display: block;
   height: 30px;
   margin-left: auto;
