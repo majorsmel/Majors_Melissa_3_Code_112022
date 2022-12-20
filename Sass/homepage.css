@@ -294,18 +294,19 @@ main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex {
 }
 main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a {
   color: #000000;
+  width: 100%;
 }
 main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a:hover {
   cursor: pointer;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .restaurant-tile {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a .restaurant-tile {
   position: relative;
   background-color: #ffffff;
   border-radius: 15px;
   width: 100%;
   box-shadow: 0px 5px 10px 0px #cccccc;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .restaurant-tile img {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a .restaurant-tile img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 200px;
@@ -314,7 +315,7 @@ main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .
   border-top-right-radius: 15px;
   margin-bottom: -5px;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .new-tag {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a .new-tag {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #2f8770;
@@ -326,25 +327,25 @@ main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .
   top: 15px;
   right: 15px;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a .text-icon-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   padding: 15px;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .restaurant-tile-text h3 {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a .text-icon-container .restaurant-tile-text h3 {
   margin: 0px;
   font-size: 18px;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .restaurant-tile-text p {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a .text-icon-container .restaurant-tile-text p {
   margin: 0px;
   font-size: 18px;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a .text-icon-container .heart-icon {
   position: relative;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon i.fa-outlineheart {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a .text-icon-container .heart-icon i.fa-outlineheart {
   color: #000000;
   padding: 0px 20px 25px 0px;
   position: absolute;
@@ -352,17 +353,17 @@ main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .
   z-index: 1;
   transition: 0.5s;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon i.fa-solidheart {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a .text-icon-container .heart-icon i.fa-solidheart {
   color: transparent;
   position: absolute;
   right: 10px;
   transition: 0.5s;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon:hover i.fa-outlineheart, main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon:active i.fa-outlineheart {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a .text-icon-container .heart-icon:hover i.fa-outlineheart, main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a .text-icon-container .heart-icon:active i.fa-outlineheart {
   cursor: pointer;
   z-index: -1;
 }
-main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon:hover i.fa-solidheart, main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .text-icon-container .heart-icon:active i.fa-solidheart {
+main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a .text-icon-container .heart-icon:hover i.fa-solidheart, main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex a .text-icon-container .heart-icon:active i.fa-solidheart {
   cursor: pointer;
   z-index: 1;
   color: #9356DC;
@@ -398,21 +399,21 @@ main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .
   }
   main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex {
     flex-direction: row;
-    gap: 10px;
+    gap: 20px;
   }
 }
 /*DESKTOP*/
 @media (min-width: 1008px) {
-  main .instructions-container .step-container {
-    flex-direction: row;
-    gap: 50px;
-    align-items: start;
-    padding: 0px 15px;
-  }
   nav .description h2 {
     font-size: 72px;
   }
   nav .description p {
     font-size: 36px;
+  }
+  main .instructions-container .step-container {
+    flex-direction: row;
+    gap: 50px;
+    align-items: start;
+    padding: 0px 15px;
   }
 }/*# sourceMappingURL=homepage.css.map */

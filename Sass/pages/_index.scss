@@ -104,69 +104,71 @@ main {
         width: 100%;
         & a {
           color: #000000;
+          width: 100%;
           &:hover {
             cursor: pointer;
           }
-        }
-        & .restaurant-tile {
-          position: relative;
-          background-color: #ffffff;
-          border-radius: $mdRadius;
-          width: 100%;
-          @include boxShadow;
-            & img {
-              object-fit: cover;
-              height: 200px;
-              width: 100%;
-              border-top-left-radius: $mdRadius;
-              border-top-right-radius: $mdRadius;
-              margin-bottom: -5px;
-            }
-        }
-        & .new-tag {
-          font-family: $roboto;
-          font-size: 14px;
-          color: #2f8770;
-          background-color: $tertiary;
-          display: inline;
-          padding: 5px 25px;
-          border-radius: 2px;
-          position: absolute;
-          top:15px;
-          right: 15px;
-        }
-        & .text-icon-container {
-          @include flexRowCenter;
-          justify-content: space-between;
-          padding: 15px;
-          & .restaurant-tile-text {
-            h3 {
-              margin: 0px;
-              font-size: 18px;
-            }
-            p {
-              margin: 0px;
-              font-size: 18px;
-            }
-          }
-          & .heart-icon {
+        
+          & .restaurant-tile {
             position: relative;
-            & i.fa-outlineheart {
-              @include outlineHeartBefore;
+            background-color: #ffffff;
+            border-radius: $mdRadius;
+            width: 100%;
+            @include boxShadow;
+              & img {
+                object-fit: cover;
+                height: 200px;
+                width: 100%;
+                border-top-left-radius: $mdRadius;
+                border-top-right-radius: $mdRadius;
+                margin-bottom: -5px;
+              }
+          }
+          & .new-tag {
+            font-family: $roboto;
+            font-size: 14px;
+            color: #2f8770;
+            background-color: $tertiary;
+            display: inline;
+            padding: 5px 25px;
+            border-radius: 2px;
+            position: absolute;
+            top:15px;
+            right: 15px;
+          }
+          & .text-icon-container {
+            @include flexRowCenter;
+            justify-content: space-between;
+            padding: 15px;
+            & .restaurant-tile-text {
+              h3 {
+                margin: 0px;
+                font-size: 18px;
+              }
+              p {
+                margin: 0px;
+                font-size: 18px;
+              }
             }
-            & i.fa-solidheart {
-              @include solidHeartBefore;
-            }
-            &:hover, &:active {
+            & .heart-icon {
+              position: relative;
               & i.fa-outlineheart {
-                @include outlineHeartAfter;
+                @include outlineHeartBefore;
               }
               & i.fa-solidheart {
-                @include solidHeartAfter;
+                @include solidHeartBefore;
+              }
+              &:hover, &:active {
+                & i.fa-outlineheart {
+                  @include outlineHeartAfter;
+                }
+                & i.fa-solidheart {
+                  @include solidHeartAfter;
+                }
               }
             }
           }
-        }
+        }  
       }
     }
   }
@@ -207,7 +209,7 @@ main {
           justify-content: center;
           & .restaurant-tiles-flex {
             flex-direction: row;
-            gap: 10px;
+            gap: 20px;
           }
         }
     }
@@ -216,12 +218,6 @@ main {
 
 /*DESKTOP*/
 @media (min-width: 1008px) {
-  main .instructions-container .step-container {
-    flex-direction: row;
-    gap: 50px;
-    align-items: start;
-    padding: 0px 15px;
-  }
   nav {
     & .description {
       & h2 {
@@ -232,6 +228,11 @@ main {
       }
     }
   }
-    
+  main .instructions-container .step-container {
+    flex-direction: row;
+    gap: 50px;
+    align-items: start;
+    padding: 0px 15px;
+  }    
 }
   
