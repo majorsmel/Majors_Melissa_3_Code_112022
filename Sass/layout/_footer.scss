@@ -35,3 +35,18 @@ footer {
     }
     
 }
+
+/*DESKTOP*/
+@media (min-width: 1008px) {
+    h1 {
+        text-align: center;
+    }
+    footer ul {
+        padding-left: 0px;
+        text-align: center;
+        & li {
+            display: inline;
+            padding: 0px 50px;
+        }
+    }
+}
