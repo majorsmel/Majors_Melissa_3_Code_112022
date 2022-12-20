@@ -101,6 +101,7 @@ main {
         @include flexColumnCenter;
         justify-content: space-between;
         gap: 20px;
+        width: 100%;
         & a {
           color: #000000;
           &:hover {
@@ -111,7 +112,7 @@ main {
           position: relative;
           background-color: #ffffff;
           border-radius: $mdRadius;
-          width: 320px;
+          width: 100%;
           @include boxShadow;
             & img {
               object-fit: cover;
@@ -191,9 +192,7 @@ main {
           justify-content: center;
           & .restaurant-tiles-flex {
             flex-direction: row;
-            & .restaurant-tile {
-              min-width: 305px;
-            }
+            gap: 10px;
           }
         }
       }
@@ -222,9 +221,6 @@ main {
     gap: 50px;
     align-items: start;
     padding: 0px 15px;
-  }
-  main .restaurants-container .restaurant-tiles-container .restaurant-tiles-flex .restaurant-tile {
-      min-width: 450px;
   }
   nav {
     & .description {
